@@ -97,10 +97,8 @@ procedures, see Drabek et al. (1981).
 }
 
 \examples{
-
-\dontrun{
-data(emon)   #Load the emon data set#'
 #Plot the EMONs
+if(requireNamespace("network", quietly=TRUE)) {
 par(mfrow=c(3,3))
 for(i in 1:length(emon))
   plot(emon[[i]],main=names(emon)[i],edge.lwd="Frequency")
