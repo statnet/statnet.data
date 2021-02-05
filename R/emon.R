@@ -5,13 +5,15 @@
 #' (SAR) activities.  Networks of interaction frequency are reported, along with
 #' several organizational attributes.
 #'
+#' @docType data
+#'
 #' @format A list of 7 [network][network::network] objects:
 #'
-#' ```{r}
+#' ```{r, echo=FALSE}
 #' knitr::kable(
 #'   data.frame(
-#'     Name = c("Cheyenne", "HurrFrederic", "LakePomona", "MtSi", "MtStHelens",
-#'       "Texas", "Wichita"),
+#'     Name = c("`Cheyenne`", "`HurrFrederic`", "`LakePomona`", "`MtSi`",
+#'       "`MtStHelens`", "`Texas`", "`Wichita`"),
 #'     Class = "network",
 #'     Description = c(
 #'       "Cheyenne SAR EMON",
@@ -26,20 +28,15 @@
 #' )
 #' ```
 #'
-#'  \tabular{rlll}{
-#'    `[[1]]` \tab Cheyenne     \tab network \tab Cheyenne SAR EMON\cr
-#'    `[[2]]` \tab HurrFrederic \tab network \tab Hurricane Frederic SAR EMON\cr
-#'    `[[3]]` \tab LakePomona   \tab network \tab Lake Pomona SAR EMON\cr
-#'    `[[4]]` \tab MtSi         \tab network \tab Mt. Si SAR EMON\cr
-#'    `[[5]]` \tab MtStHelens   \tab network \tab Mt. St. Helens SAR EMON\cr
-#'    `[[6]]` \tab Texas        \tab network \tab Texas Hill Country SAR EMON\cr
-#'    `[[7]]` \tab Wichita      \tab network \tab Wichita Falls SAR EMON
-#'  }
-#'
 #' Each network has one edge attribute:
 #'
-#' \tabular{lll}{ Frequency \tab numeric \tab Interaction frequency (1-4;
-#' 1=most frequent) }
+#' ```{r, echo=FALSE}
+#' knitr::kable(data.frame(
+#'   Name = "`Frequency`",
+#'   Class = "numeric",
+#'   Description = "Interaction frequency (1-4; 1=most frequent)"
+#' ))
+#' ```
 #'
 #' Each network also has 8 vertex attributes:
 #'
@@ -53,10 +50,9 @@
 #'   vertex.names        \tab character \tab Organization name\cr
 #'   Volunteer.Staff     \tab numeric   \tab Number of volunteer staff
 #'  }
-
-
-
-
+#'
+#'
+#' @details
 #' All networks collected by Drabek et al. reflect reported frequency of
 #' organizational interaction during the search and rescue effort; the (i,j)
 #' edge constitutes i's report regarding interaction with j, with non-adjacent
@@ -95,46 +91,27 @@
 #' been substituted.  For detailed information regarding data coding and
 #' procedures, see Drabek et al. (1981).
 #'
-#' @name emon
-#' @docType data
-#' @usage data(emon)
-#' @format A list of 7 \code{\link{network}} objects:
+#' @section Visualization:
 #'
-#'  \tabular{rlll}{
-#'    `[[1]]` \tab Cheyenne     \tab network \tab Cheyenne SAR EMON\cr
-#'    `[[2]]` \tab HurrFrederic \tab network \tab Hurricane Frederic SAR EMON\cr
-#'    `[[3]]` \tab LakePomona   \tab network \tab Lake Pomona SAR EMON\cr
-#'    `[[4]]` \tab MtSi         \tab network \tab Mt. Si SAR EMON\cr
-#'    `[[5]]` \tab MtStHelens   \tab network \tab Mt. St. Helens SAR EMON\cr
-#'    `[[6]]` \tab Texas        \tab network \tab Texas Hill Country SAR EMON\cr
-#'    `[[7]]` \tab Wichita      \tab network \tab Wichita Falls SAR EMON
-#'  }
+#' ```{r emon-figure, echo=FALSE, fig.width=8, fig.height=16}
+#' layout(matrix(1:8, nrow=4, ncol=2, byrow=TRUE))
+#' for(n in names(emon)) {
+#'   network::plot.network(emon[[n]])
+#'   title(main = n)
+#' }
+#' layout(1)
+#' ```
 #'
-#' Each network has one edge attribute:
+#' @seealso [network::network()]
 #'
-#' \tabular{lll}{ Frequency \tab numeric \tab Interaction frequency (1-4;
-#' 1=most frequent) }
-#'
-#' Each network also has 8 vertex attributes:
-#'
-#'  \tabular{lll}{
-#'   Command.Rank.Score  \tab numeric   \tab Mean rank in the command structure\cr
-#'   Decision.Rank.Score \tab numeric   \tab Mean rank in the decision process\cr
-#'   Formalization       \tab numeric   \tab Degree of formalization\cr
-#'   Location            \tab character \tab Location code\cr
-#'   Paid.Staff          \tab numeric   \tab Number of paid staff\cr
-#'   Sponsorship         \tab character \tab Sponsorship type\cr
-#'   vertex.names        \tab character \tab Organization name\cr
-#'   Volunteer.Staff     \tab numeric   \tab Number of volunteer staff
-#'  }
-#'
-#' @seealso \code{\link{network}}
 #' @source Drabek, T.E.; Tamminga, H.L.; Kilijanek, T.S.; and Adams, C.R.
-#' (1981).  \emph{Data from Managing Multiorganizational Emergency Responses:
-#' Emergent Search and Rescue Networks in Natural Disaster and Remote Area
-#' Settings.} Program on Technology, Environment, and Man Monograph 33.
-#' Institute for Behavioral Science, University of Colorado.
+#'   (1981). *Data from Managing Multiorganizational Emergency Responses:
+#'   Emergent Search and Rescue Networks in Natural Disaster and Remote Area
+#'   Settings*. Program on Technology, Environment, and Man Monograph 33.
+#'   Institute for Behavioral Science, University of Colorado.
+#'
 #' @keywords datasets
+#'
 #' @examples
 #'
 #' data(emon)   #Load the emon data set
@@ -144,4 +121,4 @@
 #' for(i in 1:length(emon))
 #'   plot(emon[[i]],main=names(emon)[i],edge.lwd="Frequency")
 #'
-NULL
+"emon"
