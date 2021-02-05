@@ -94,6 +94,7 @@
 #' @section Visualization:
 #'
 #' ```{r emon-figure, echo=FALSE, fig.width=8, fig.height=16}
+#' set.seed(666)
 #' layout(matrix(1:8, nrow=4, ncol=2, byrow=TRUE))
 #' for(n in names(emon)) {
 #'   network::plot.network(emon[[n]])
@@ -114,11 +115,11 @@
 #'
 #' @examples
 #'
-#' data(emon)   #Load the emon data set
-#'
+#' \dontrun{
+#' data(emon)   #Load the emon data set#'
 #' #Plot the EMONs
 #' par(mfrow=c(3,3))
 #' for(i in 1:length(emon))
 #'   plot(emon[[i]],main=names(emon)[i],edge.lwd="Frequency")
-#'
+#' }
 "emon"
