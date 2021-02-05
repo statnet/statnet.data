@@ -2,9 +2,61 @@
 #'
 #' Drabek et al. (1981) provide seven case studies of emergent
 #' multi-organizational networks (EMONs) in the context of search and rescue
-#' (SAR) activities.  Networks of interaction frequency are reported, along
-#' with several organizational attributes.
+#' (SAR) activities.  Networks of interaction frequency are reported, along with
+#' several organizational attributes.
 #'
+#' @format A list of 7 [network][network::network] objects:
+#'
+#' ```{r}
+#' knitr::kable(
+#'   data.frame(
+#'     Name = c("Cheyenne", "HurrFrederic", "LakePomona", "MtSi", "MtStHelens",
+#'       "Texas", "Wichita"),
+#'     Class = "network",
+#'     Description = c(
+#'       "Cheyenne SAR EMON",
+#'       "Hurricane Frederic SAR EMON",
+#'       "Lake Pomona SAR EMON",
+#'       "Mt. Si SAR EMON",
+#'       "Mt. St. Helens SAR EMON",
+#'       "Texas Hill Country SAR EMON",
+#'       "Wichita Falls SAR EMON"
+#'     )
+#'   )
+#' )
+#' ```
+#'
+#'  \tabular{rlll}{
+#'    `[[1]]` \tab Cheyenne     \tab network \tab Cheyenne SAR EMON\cr
+#'    `[[2]]` \tab HurrFrederic \tab network \tab Hurricane Frederic SAR EMON\cr
+#'    `[[3]]` \tab LakePomona   \tab network \tab Lake Pomona SAR EMON\cr
+#'    `[[4]]` \tab MtSi         \tab network \tab Mt. Si SAR EMON\cr
+#'    `[[5]]` \tab MtStHelens   \tab network \tab Mt. St. Helens SAR EMON\cr
+#'    `[[6]]` \tab Texas        \tab network \tab Texas Hill Country SAR EMON\cr
+#'    `[[7]]` \tab Wichita      \tab network \tab Wichita Falls SAR EMON
+#'  }
+#'
+#' Each network has one edge attribute:
+#'
+#' \tabular{lll}{ Frequency \tab numeric \tab Interaction frequency (1-4;
+#' 1=most frequent) }
+#'
+#' Each network also has 8 vertex attributes:
+#'
+#'  \tabular{lll}{
+#'   Command.Rank.Score  \tab numeric   \tab Mean rank in the command structure\cr
+#'   Decision.Rank.Score \tab numeric   \tab Mean rank in the decision process\cr
+#'   Formalization       \tab numeric   \tab Degree of formalization\cr
+#'   Location            \tab character \tab Location code\cr
+#'   Paid.Staff          \tab numeric   \tab Number of paid staff\cr
+#'   Sponsorship         \tab character \tab Sponsorship type\cr
+#'   vertex.names        \tab character \tab Organization name\cr
+#'   Volunteer.Staff     \tab numeric   \tab Number of volunteer staff
+#'  }
+
+
+
+
 #' All networks collected by Drabek et al. reflect reported frequency of
 #' organizational interaction during the search and rescue effort; the (i,j)
 #' edge constitutes i's report regarding interaction with j, with non-adjacent
