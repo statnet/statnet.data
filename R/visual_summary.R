@@ -9,7 +9,7 @@ visual_summary <- function(net, net_name=deparse(substitute(net)), ...) {
   network::plot.network(net, ...)
   vattrs <- network::list.vertex.attributes(net)
   eattrs <- network::list.edge.attributes(net)
-  title(
+  graphics::title(
     main = net_name,
     sub = paste(
       if(identical(vattrs, "na")) {
