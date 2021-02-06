@@ -91,6 +91,8 @@
 #' been substituted.  For detailed information regarding data coding and
 #' procedures, see Drabek et al. (1981).
 #'
+#' @template licenses
+#'
 #' @section Visualization:
 #'
 #' ```{r emon-figure, echo=FALSE, fig.width=8, fig.height=16}

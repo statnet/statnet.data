@@ -6,6 +6,8 @@
 #' @format This data is stored in symmetric `r paste(dim(flo), collapse='x')`
 #'   adjacency matrix form.
 #'
+#' @template licenses
+#'
 #' @section Visualization:
 #'
 #' ```{r flo-figure, echo=FALSE}

@@ -91,6 +91,12 @@ Note that where intervals were given by the original source, midpoints have
 been substituted.  For detailed information regarding data coding and
 procedures, see Drabek et al. (1981).
 }
+\section{Licenses and Citation}{
+ When publishing results obtained using this
+data set, the original authors (see sections Source and References) should
+be cited, along with this \code{R} package.
+}
+
 \section{Visualization}{
 
 \figure{emon-figure-1.png}

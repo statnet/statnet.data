@@ -20,6 +20,12 @@ flo
 This is a data set of Padgett (1994), consisting of weddings among leading
 Florentine families.
 }
+\section{Licenses and Citation}{
+ When publishing results obtained using this
+data set, the original authors (see sections Source and References) should
+be cited, along with this \code{R} package.
+}
+
 \section{Visualization}{
 
 \figure{flo-figure-1.png}
