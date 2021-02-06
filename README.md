@@ -14,7 +14,7 @@ throughout other Statnet packages.
 
 ## Datasets
 
-<img src="man/figures/ecoli-figure-1.png" width="100%" /><img src="man/figures/emon-figure-1.png" width="100%" /><img src="man/figures/florentine-figure-1.png" width="100%" />
+<img src="man/figures/ecoli-figure-1.png" width="100%" /><img src="man/figures/emon-figure-1.png" width="100%" /><img src="man/figures/faux.desert.high-figure-1.png" width="100%" /><img src="man/figures/faux.dixon.high-figure-1.png" width="100%" /><img src="man/figures/florentine-figure-1.png" width="100%" />
 
 ## Installation
 
