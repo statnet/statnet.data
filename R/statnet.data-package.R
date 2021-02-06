@@ -1,3 +1,7 @@
+#' @name statnet.data-package
+#' @aliases statnet.data
+#' @docType package
+#'
 #' @section Other packages with network data:
 #' - `ergmharris` (Harris 2013) -- Local Health Department network data set
 #' - `networkdata` (Schoch 2020) -- Big collection of network datasets assembled
@@ -14,7 +18,8 @@
 #' David Schoch (2020). networkdata: Repository of Network Datasets. R package
 #' version 0.1.3. https://github.com/schochastics/networkdata
 #'
-#' @keywords internal
+#'
+#' @keywords internal,package
 "_PACKAGE"
 
 # The following block is used by usethis to automatically manage

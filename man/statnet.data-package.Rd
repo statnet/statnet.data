@@ -2,8 +2,9 @@
 % Please edit documentation in R/statnet.data-package.R
 \docType{package}
 \name{statnet.data-package}
-\alias{statnet.data}
 \alias{statnet.data-package}
+\alias{_PACKAGE}
+\alias{statnet.data}
 \title{statnet.data: Network Datasets for the Statnet Suite}
 \description{
 Collection of network datasets used primarly in examples and tests
@@ -40,4 +41,4 @@ Useful links:
 \strong{Maintainer}: Michal Bojanowski \email{michal2992@gmail.com} (\href{https://orcid.org/0000-0001-7503-852X}{ORCID})
 
 }
-\keyword{internal}
+\keyword{internal,package}
