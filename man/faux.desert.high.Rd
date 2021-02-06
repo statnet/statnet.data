@@ -108,7 +108,8 @@ Other high school networks:
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},
-\code{\link{faux.dixon.high}}
+\code{\link{faux.dixon.high}},
+\code{\link{sampson}}
 }
 \concept{directed networks}
 \concept{high school networks}

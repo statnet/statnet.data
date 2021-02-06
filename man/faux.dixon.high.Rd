@@ -103,7 +103,8 @@ Adolescent Health, \emph{Journal of the American Medical Association}, 278:
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},
-\code{\link{faux.desert.high}}
+\code{\link{faux.desert.high}},
+\code{\link{sampson}}
 
 Other high school networks: 
 \code{\link{faux.desert.high}},
