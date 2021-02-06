@@ -22,7 +22,7 @@
 #'
 #' @section Visualizations:
 #'
-#' ```{r faux.desert.high-figure, echo=FALSE, fig.width=10, fig.height=4}
+#' ```{r faux.desert.high-figure, echo=FALSE}
 #' set.seed(666)
 #' network::plot.network(faux.desert.high)
 #' title(main="faux.desert.high")
