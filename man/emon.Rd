@@ -106,6 +106,9 @@ for(i in 1:length(emon))
 }
 \seealso{
 \code{\link[network:network]{network::network()}}
+
+Other directed networks: 
+\code{\link{ecoli}}
 }
 \concept{directed networks}
 \keyword{datasets}

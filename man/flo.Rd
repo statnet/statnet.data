@@ -39,6 +39,9 @@ Methods and Applications}, Cambridge: Cambridge University Press.
 }
 \seealso{
 \code{\link[network:network]{network::network()}}
+
+Other undirected networks: 
+\code{\link{ecoli}}
 }
 \concept{undirected networks}
 \keyword{datasets}
