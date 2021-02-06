@@ -107,7 +107,8 @@ Other directed networks:
 
 Other high school networks: 
 \code{\link{faux.desert.high}},
-\code{\link{faux.magnolia.high}}
+\code{\link{faux.magnolia.high}},
+\code{\link{faux.mesa.high}}
 }
 \concept{directed networks}
 \concept{high school networks}

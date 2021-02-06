@@ -89,11 +89,13 @@ Adolescent Health, \emph{Journal of the American Medical Association}, 278:
 
 Other undirected networks: 
 \code{\link{ecoli}},
+\code{\link{faux.mesa.high}},
 \code{\link{florentine}}
 
 Other high school networks: 
 \code{\link{faux.desert.high}},
-\code{\link{faux.dixon.high}}
+\code{\link{faux.dixon.high}},
+\code{\link{faux.mesa.high}}
 }
 \concept{high school networks}
 \concept{undirected networks}

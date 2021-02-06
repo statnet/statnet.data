@@ -53,6 +53,7 @@ Other directed networks:
 
 Other undirected networks: 
 \code{\link{faux.magnolia.high}},
+\code{\link{faux.mesa.high}},
 \code{\link{florentine}}
 }
 \concept{directed networks}
