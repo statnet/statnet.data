@@ -1,8 +1,8 @@
 #' Florentine Family Marriage and Business Ties Data
 #'
-#' @description This is a data set of marriage and business ties among
+#' @description These are datasets of marriage and business ties among
 #'   Renaissance Florentine families. The data is originally from Padgett (1994)
-#'   via \code{UCINET}.
+#'   via `UCINET`.
 #'
 #' @description - `flo` -- adjacency matrix consisting of weddings among leading
 #'   Florentine families.
@@ -11,14 +11,6 @@
 #'   adjacency matrix.
 #'
 #' @template data
-#'
-#' @section Visualizations:
-#'
-#' ```{r flo-figure, echo=FALSE}
-#' set.seed(666)
-#' network::plot.network(network::network(flo, directed=FALSE),
-#'   displaylabels=TRUE, boxed.labels = TRUE, label.cex=0.75)
-#' ```
 #'
 #' @references
 #' Breiger R. and Pattison P. (1986). Cumulated social roles: The duality
@@ -31,7 +23,6 @@
 #'   Renaissance Florence, 1282-1500.* Paper delivered to the Social Science
 #'   History Association.
 #'
-#' @seealso [network::network()]
 #' @docType data
 #' @name florentine
 #' @keywords datasets
@@ -50,12 +41,15 @@
 
 
 #' @rdname florentine
-#' @aliases florentine flobusiness flomarriage
+#' @aliases flobusiness
 #'
 #' @description - `flomarriage` -- The `flo` data as a
 #'   [`network`][network::network] object
 #' @description - `flobusiness` -- The business ties among Renaissance
 #'   Florentine families as a [`network`][network::network] object.
+#'
+#' @format Data `flomarriage` is identical to `flo` but as a
+#'   [`network`][network::network] object with 16 nodes and 20 edges.
 #'
 #' @details Breiger \& Pattison (1986), in their discussion of local role
 #'   analysis, use a subset of data on the social relations among Renaissance
@@ -81,14 +75,33 @@
 #' dominant in this struggle: one revolved around the infamous Medicis (9), the
 #' other around the powerful Strozzis (15).
 #'
+#' @section Visualizations:
 #'
-#'
-#' @seealso flo, network, plot.network, ergm
+#' ```{r florentine-figure, echo=FALSE, fig.width=10, fig.height=4}
+#' set.seed(666)
+#' layout(matrix(1:2, 1, 2))
+#' network::plot.network(flomarriage,
+#'   displaylabels=TRUE, boxed.labels = TRUE, label.cex=0.75)
+#' title(main="flomarriage")
+#' network::plot.network(flobusiness,
+#'   displaylabels=TRUE, boxed.labels = TRUE, label.cex=0.75)
+#' title(main="flobusiness")
+#' layout(1)
+#' ```
 #'
 #' @keywords datasets
 "flobusiness"
 
 #' @rdname florentine
 #' @aliases flomarriage
-#' @usage flomarriage
+#'
+#' @format Data `flobusiness` is a [`network`][network::network] object with 16
+#'   nodes and 20 edges.
+#'
+#'  Both `flomarriage` and `flobusines` include the following vertex attributes:
+#'
+#'  - `priorates` -- number of "priorates" (seats on civic council) held between 1282 - 1344
+#'  - `totalties` -- total number of business or marriage ties in the total dataset of 116 families
+#'  - `wealth` -- each family's net wealth in 1427 (in thousands of lira)
+#'
 "flomarriage"
