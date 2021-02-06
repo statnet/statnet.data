@@ -47,7 +47,8 @@ using exponential random graph models. Bioinformatics, 23(19), 2604-2611.
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other directed networks: 
-\code{\link{emon}}
+\code{\link{emon}},
+\code{\link{faux.desert.high}}
 
 Other undirected networks: 
 \code{\link{florentine}}

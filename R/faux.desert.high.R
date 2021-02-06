@@ -1,0 +1,98 @@
+#' Faux desert High School as a network object
+#'
+#' This data set represents a simulation of a directed in-school friendship
+#' network.  The network is named faux.desert.high.
+#'
+#' @format `faux.desert.high` is a [`network`][network::network] object with 107
+#'   vertices (students, in this case) and 439 directed edges (friendship
+#'   nominations). To obtain additional summary information about it, type
+#'   `summary(faux.desert.high)`.
+#'
+#' The vertex attributes are:
+#'
+#' - `Grade` -- attribute has values 7 through 12, indicating each student's
+#' grade in school
+#' - `Sex`
+#' - `Race` -- attribute is based on the answers to two questions, one on
+#' Hispanic identity and one on race, and takes six possible values: White
+#' (non-Hisp.), Black (non-Hisp.), Hispanic, Asian (non-Hisp.), Native American,
+#' and Other (non-Hisp.)
+#'
+#' @template data
+#'
+#' @section Visualizations:
+#'
+#' ```{r faux.desert.high-figure, echo=FALSE, fig.width=10, fig.height=4}
+#' set.seed(666)
+#' network::plot.network(faux.desert.high)
+#' ```
+#'
+#' @section Licenses and Citation: If the source of the data set does not
+#' specified otherwise, this data set is protected by the Creative Commons
+#' License \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
+#'
+#' When publishing results obtained using this data set, the original authors
+#' (Resnick et al, 1997) should be cited. In addition this package should be
+#' cited as:
+#'
+#' Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and
+#' Martina Morris. 2003 *statnet: Software tools for the Statistical
+#' Modeling of Network Data* https://statnet.org.
+#'
+#' @source The data set is simulation based upon an ergm model fit to data from
+#' one school community from the AddHealth Study, Wave I (Resnick et al.,
+#' 1997). It was constructed as follows:
+#'
+#' The school in question (a single school with 7th through 12th grades) was
+#' selected from the Add Health "structure files."  Documentation on these
+#' files can be found here:
+#' \url{https://addhealth.cpc.unc.edu/documentation/codebooks/}.
+#'
+#' The stucture file contains directed out-ties representing each instance of a
+#' student who named another student as a friend.  Students could nominate up
+#' to 5 male and 5 female friends. Note that registered students who did not
+#' take the AddHealth survey or who were not listed by name on the schools'
+#' student roster are not included in the stucture files.  In addition, we
+#' removed any students with missing values for race, grade or sex.
+#'
+#' The following \code{\link{ergm}} model was fit to the original data:
+#'
+#' ```{r, eval=FALSE}
+#' desert.fit <- ergm(
+#'   original.net ~ edges + mutual + absdiff("grade") +
+#'     nodefactor("race", base=5) + nodefactor("grade", base=3) +
+#'     nodefactor("sex") + nodematch("race", diff = TRUE) +
+#'     nodematch("grade", diff = TRUE) + nodematch("sex", diff = FALSE) +
+#'     idegree(0:1) + odegree(0:1) + gwesp(0.1,fixed=T),
+#'   constraints = ~bd(maxout=10),
+#'   control = control.ergm(
+#'     MCMLE.steplength = .25,
+#'     MCMC.burnin = 100000,
+#'     MCMC.interval = 10000,
+#'     MCMC.samplesize = 2500,
+#'     MCMLE.maxit = 100
+#'   ),
+#'   verbose=T
+#' )
+#' ```
+#'
+#' Then the `faux.desert.high` dataset was created by simulating a single
+#' network from the above model fit:
+#'
+#' ```{r, eval=FALSE}
+#' faux.desert.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
+#'   constraint = "edges")
+#' ```
+#'
+#' @references
+#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
+#' adolescents from harm. Findings from the National Longitudinal Study on
+#' Adolescent Health, *Journal of the American Medical Association*, 278:
+#' 823-32.
+#'
+#' @family high school networks
+#' @family directed networks
+#'
+#' @docType data
+#' @keywords datasets
+"faux.desert.high"
