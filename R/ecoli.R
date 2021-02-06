@@ -17,7 +17,7 @@
 #' @family directed networks
 #' @family undirected networks
 #'
-#' @template licenses
+#' @template data
 #'
 #' @section Visualization:
 #' ```{r, ecoli-figure, echo=FALSE, fig.asp=0.5}

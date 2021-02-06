@@ -91,7 +91,7 @@
 #' been substituted.  For detailed information regarding data coding and
 #' procedures, see Drabek et al. (1981).
 #'
-#' @template licenses
+#' @template data
 #'
 #' @section Visualization:
 #'
@@ -104,8 +104,6 @@
 #' }
 #' layout(1)
 #' ```
-#'
-#' @seealso [network::network()]
 #'
 #' @source Drabek, T.E.; Tamminga, H.L.; Kilijanek, T.S.; and Adams, C.R.
 #'   (1981). *Data from Managing Multiorganizational Emergency Responses:
