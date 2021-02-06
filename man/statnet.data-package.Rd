@@ -15,7 +15,7 @@ Collection of network datasets used primarly in examples and tests
 \item \code{ergmharris} (Harris 2013) -- Local Health Department network data set
 \item \code{networkdata} (Schoch 2020) -- Big collection of network datasets assembled
 from different sources. Not available on CRAN due to its size, but can be
-obtained from \href{https://github.com/schochastics/networkdata}{GitHub} Data are
+obtained from \href{https://github.com/schochastics/networkdata}{GitHub}. Data are
 provided as \code{igraph} objects but can be easily converted to \code{network} with
 \href{https://cran.r-project.org/package=intergraph}{\code{intergraph::asNetwork()}}
 }
