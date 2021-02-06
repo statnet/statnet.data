@@ -1,5 +1,6 @@
 ^statnet\.data\.Rproj$
 ^\.Rproj\.user$
+^\.Rhistory$
 ^LICENSE\.md$
 ^\.github$
 ^README\.Rmd$
