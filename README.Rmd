@@ -22,18 +22,17 @@ knitr::opts_chunk$set(
 A collection of network datasets used primarily in examples and tests throughout
 other Statnet packages.
 
-## Datasets
-
-```{r netplots, echo=FALSE}
-fnames <- list.files("man/figures", pattern="-figure-", full.names = TRUE)
-knitr::include_graphics(fnames)
-```
-
-
 ## Installation
 
 For now:
 
 ```r
 remotes::install_github("statnet/statnet.data")
+```
+
+## Datasets
+
+```{r netplots, echo=FALSE}
+fnames <- list.files("man/figures", pattern="-figure-", full.names = TRUE)
+knitr::include_graphics(fnames)
 ```
