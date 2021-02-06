@@ -40,4 +40,5 @@ Methods and Applications}, Cambridge: Cambridge University Press.
 \seealso{
 \code{\link[network:network]{network::network()}}
 }
+\concept{undirected networks}
 \keyword{datasets}

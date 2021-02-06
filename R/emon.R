@@ -112,6 +112,8 @@
 #'   Institute for Behavioral Science, University of Colorado.
 #'
 #' @keywords datasets
+#' @family directed networks
+#'
 #'
 #' @examples
 #' #Plot the EMONs

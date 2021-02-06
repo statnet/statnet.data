@@ -107,4 +107,5 @@ for(i in 1:length(emon))
 \seealso{
 \code{\link[network:network]{network::network()}}
 }
+\concept{directed networks}
 \keyword{datasets}

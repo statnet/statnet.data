@@ -24,6 +24,7 @@
 #' @seealso [network::network()]
 #' @docType data
 #' @keywords datasets
+#' @family undirected networks
 #'
 #' @examples
 #' if(requireNamespace("network", quietly=TRUE)) {
