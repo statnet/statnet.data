@@ -111,7 +111,8 @@ Applications}, Cambridge: Cambridge University Press.
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other undirected networks: 
-\code{\link{ecoli}}
+\code{\link{ecoli}},
+\code{\link{faux.magnolia.high}}
 }
 \concept{undirected networks}
 \keyword{datasets}

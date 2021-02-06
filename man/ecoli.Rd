@@ -52,6 +52,7 @@ Other directed networks:
 \code{\link{faux.dixon.high}}
 
 Other undirected networks: 
+\code{\link{faux.magnolia.high}},
 \code{\link{florentine}}
 }
 \concept{directed networks}
