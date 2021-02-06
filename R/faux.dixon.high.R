@@ -1,12 +1,12 @@
-#' Faux desert High School as a network object
+#' Faux dixon High School as a network object
 #'
 #' This data set represents a simulation of a directed in-school friendship
-#' network.  The network is named `faux.desert.high`.
+#' network. The network is named `faux.dixon.high`.
 #'
-#' @format `faux.desert.high` is a [`network`][network::network] object with 107
-#'   vertices (students, in this case) and 439 directed edges (friendship
-#'   nominations). To obtain additional summary information about it, type
-#'   `summary(faux.desert.high)`.
+#' @format `faux.dixon.high` is a [`network`][network::network] object
+#' with 248 vertices (students, in this case) and 1197 directed edges
+#' (friendship nominations). To obtain additional summary information about it,
+#' type `summary(faux.dixon.high)`.
 #'
 #' The vertex attributes are:
 #'
@@ -22,9 +22,9 @@
 #'
 #' @section Visualizations:
 #'
-#' ```{r faux.desert.high-figure, echo=FALSE, fig.width=10, fig.height=4}
+#' ```{r faux.dixon.high-figure, echo=FALSE, fig.width=10, fig.height=4}
 #' set.seed(666)
-#' network::plot.network(faux.desert.high)
+#' network::plot.network(faux.dixon.high)
 #' ```
 #'
 #' @section Licenses and Citation: If the source of the data set does not
@@ -38,6 +38,12 @@
 #' Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and
 #' Martina Morris. 2003 *statnet: Software tools for the Statistical
 #' Modeling of Network Data* https://statnet.org.
+#'
+#' @references
+#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
+#' adolescents from harm. Findings from the National Longitudinal Study on
+#' Adolescent Health, *Journal of the American Medical Association*, 278:
+#' 823-32.
 #'
 #' @source The data set is simulation based upon an ergm model fit to data from
 #' one school community from the AddHealth Study, Wave I (Resnick et al.,
@@ -55,10 +61,10 @@
 #' student roster are not included in the stucture files.  In addition, we
 #' removed any students with missing values for race, grade or sex.
 #'
-#' The following \code{\link{ergm}} model was fit to the original data:
+#' The following [ergm::ergm()] model was fit to the original data:
 #'
 #' ```{r, eval=FALSE}
-#' desert.fit <- ergm(
+#' dixon.fit <- ergm(
 #'   original.net ~ edges + mutual + absdiff("grade") +
 #'     nodefactor("race", base=5) + nodefactor("grade", base=3) +
 #'     nodefactor("sex") + nodematch("race", diff = TRUE) +
@@ -76,23 +82,16 @@
 #' )
 #' ```
 #'
-#' Then the `faux.desert.high` dataset was created by simulating a single
-#' network from the above model fit:
+#' Then the faux.dixon.high dataset was created by simulating a single network
+#' from the above model fit:
 #'
 #' ```{r, eval=FALSE}
-#' faux.desert.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
+#' faux.dixon.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
 #'   constraint = "edges")
 #' ```
 #'
-#' @references
-#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
-#' adolescents from harm. Findings from the National Longitudinal Study on
-#' Adolescent Health, *Journal of the American Medical Association*, 278:
-#' 823-32.
-#'
-#' @family high school networks
 #' @family directed networks
-#'
+#' @family high school networks
 #' @docType data
 #' @keywords datasets
-"faux.desert.high"
+"faux.dixon.high"

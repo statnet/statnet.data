@@ -48,7 +48,8 @@ using exponential random graph models. Bioinformatics, 23(19), 2604-2611.
 
 Other directed networks: 
 \code{\link{emon}},
-\code{\link{faux.desert.high}}
+\code{\link{faux.desert.high}},
+\code{\link{faux.dixon.high}}
 
 Other undirected networks: 
 \code{\link{florentine}}
