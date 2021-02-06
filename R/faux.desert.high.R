@@ -25,6 +25,7 @@
 #' ```{r faux.desert.high-figure, echo=FALSE, fig.width=10, fig.height=4}
 #' set.seed(666)
 #' network::plot.network(faux.desert.high)
+#' title(main="faux.desert.high")
 #' ```
 #'
 #' @section Licenses and Citation: If the source of the data set does not

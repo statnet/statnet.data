@@ -25,6 +25,7 @@
 #' ```{r faux.dixon.high-figure, echo=FALSE, fig.width=10, fig.height=4}
 #' set.seed(666)
 #' network::plot.network(faux.dixon.high)
+#' title(main="faux.dixon.high")
 #' ```
 #'
 #' @section Licenses and Citation: If the source of the data set does not

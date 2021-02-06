@@ -100,7 +100,7 @@
 #' layout(matrix(1:8, nrow=4, ncol=2, byrow=TRUE))
 #' for(n in names(emon)) {
 #'   network::plot.network(emon[[n]])
-#'   title(main = n)
+#'   title(main = paste0("emon$", n))
 #' }
 #' layout(1)
 #' ```
