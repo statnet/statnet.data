@@ -56,7 +56,7 @@
 #' student roster are not included in the stucture files.  In addition, we
 #' removed any students with missing values for race, grade or sex.
 #'
-#' The following \code{\link{ergm}} model was fit to the original data:
+#' The following ERGM model was fit to the original data:
 #'
 #' ```{r, eval=FALSE}
 #' desert.fit <- ergm(
