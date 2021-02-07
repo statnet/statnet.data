@@ -19,7 +19,7 @@
 #' version 0.1.3. https://github.com/schochastics/networkdata
 #'
 #'
-#' @keywords internal,package
+#' @keywords package
 "_PACKAGE"
 
 # The following block is used by usethis to automatically manage

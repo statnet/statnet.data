@@ -51,4 +51,4 @@ Authors:
 }
 
 }
-\keyword{internal,package}
+\keyword{package}
