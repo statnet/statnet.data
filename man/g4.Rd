@@ -22,6 +22,12 @@ It is interesting because the maximum likelihood estimator of the model with
 out degree 3 in it exists, but the maximum psuedolikelihood estimator does
 not.
 }
+\section{Licenses and Citation}{
+ When publishing results obtained using this
+data set, the original authors (see sections Source and References) should
+be cited, along with this \code{R} package.
+}
+
 \examples{
 
 summary(ergm(g4 ~ odegree(3), estimate="MPLE"))
@@ -29,6 +35,8 @@ summary(ergm(g4 ~ odegree(3), control=control.ergm(init=0)))
 
 }
 \seealso{
+\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
+
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

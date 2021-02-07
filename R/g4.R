@@ -10,6 +10,8 @@
 #' out degree 3 in it exists, but the maximum psuedolikelihood estimator does
 #' not.
 #'
+#' @template data
+#'
 #' @source Steve Goodreau
 #'
 #' @docType data

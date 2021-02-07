@@ -37,6 +37,8 @@
 #' separate network datasets here: `kapferer` is the well-known 39-individual
 #' dataset, whereas `kapferer2` is the full 43-individual dataset.
 #'
+#' @template data
+#'
 #' @source
 #' Kapferer, Bruce (1972), *Strategy and Transaction in an African Factory*,
 #' Manchester University Press.

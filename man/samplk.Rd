@@ -92,6 +92,12 @@ Winf_12, John_1, Greg_2, Hugh_14, Boni_15, Mark_7, Albert_16, Amand_13,
 Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
 original dissertation of Sampson (1969).
 }
+\section{Licenses and Citation}{
+ When publishing results obtained using this
+data set, the original authors (see sections Source and References) should
+be cited, along with this \code{R} package.
+}
+
 \section{Mislabeling in Versions Prior to 3.6.1}{
 
 In \code{ergm} versions 3.6.0 and earlier, The adjacency matrices of the
@@ -118,6 +124,8 @@ Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
 Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
 }
 \seealso{
+\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
+
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

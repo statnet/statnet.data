@@ -52,7 +52,15 @@ are the workers named Lenard, Peter, Lazarus, and Laurent.) Thus, we give two
 separate network datasets here: \code{kapferer} is the well-known 39-individual
 dataset, whereas \code{kapferer2} is the full 43-individual dataset.
 }
+\section{Licenses and Citation}{
+ When publishing results obtained using this
+data set, the original authors (see sections Source and References) should
+be cited, along with this \code{R} package.
+}
+
 \seealso{
+\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
+
 Other undirected networks: 
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},

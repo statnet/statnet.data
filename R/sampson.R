@@ -64,6 +64,8 @@
 #' Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
 #' original dissertation of Sampson (1969).
 #'
+#' @template data
+#'
 #' @section Mislabeling in Versions Prior to 3.6.1: In \code{ergm} version
 #' 3.6.0 and earlier, The adjacency matrices of the \code{\link{samplike}},
 #' \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}}
