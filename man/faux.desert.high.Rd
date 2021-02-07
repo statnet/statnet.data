@@ -105,6 +105,7 @@ Other directed networks:
 \code{\link{emon}},
 \code{\link{faux.dixon.high}},
 \code{\link{g4}},
+\code{\link{newcomb}},
 \code{\link{samplk}},
 \code{\link{sampson}},
 \code{\link{tribes}}

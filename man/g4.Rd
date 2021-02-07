@@ -42,6 +42,7 @@ Other directed networks:
 \code{\link{emon}},
 \code{\link{faux.desert.high}},
 \code{\link{faux.dixon.high}},
+\code{\link{newcomb}},
 \code{\link{samplk}},
 \code{\link{sampson}},
 \code{\link{tribes}}

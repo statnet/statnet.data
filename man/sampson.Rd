@@ -124,6 +124,7 @@ Other directed networks:
 \code{\link{faux.desert.high}},
 \code{\link{faux.dixon.high}},
 \code{\link{g4}},
+\code{\link{newcomb}},
 \code{\link{samplk}},
 \code{\link{tribes}}
 
