@@ -40,5 +40,15 @@ Useful links:
 \author{
 \strong{Maintainer}: Michal Bojanowski \email{michal2992@gmail.com} (\href{https://orcid.org/0000-0001-7503-852X}{ORCID})
 
+Authors:
+\itemize{
+  \item Mark S. Handcock \email{handcock@stat.ucla.edu}
+  \item David R. Hunter \email{dhunter@stat.psu.edu}
+  \item Carter T. Butts \email{buttsc@uci.edu}
+  \item Steven M. Goodreau \email{goodreau@u.washington.edu}
+  \item Pavel N. Krivitsky \email{pavel@statnet.org} (\href{https://orcid.org/0000-0002-9101-3362}{ORCID})
+  \item Martina Morris \email{morrism@u.washington.edu}
+}
+
 }
 \keyword{internal,package}

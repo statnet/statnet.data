@@ -2,11 +2,17 @@ Package: statnet.data
 Title: Network Datasets for the Statnet Suite
 Version: 0.1-0
 Authors@R: 
-    person(given = "Michal",
-           family = "Bojanowski",
-           role = c("aut", "cre"),
-           email = "michal2992@gmail.com",
-           comment = c(ORCID = "0000-0001-7503-852X"))
+    c(
+    person(given = "Michal", family = "Bojanowski", role = c("cre"),
+      email = "michal2992@gmail.com", comment = c(ORCID = "0000-0001-7503-852X")),
+    person("Mark S.", "Handcock", role=c("aut"), email="handcock@stat.ucla.edu"),
+    person("David R.", "Hunter", role=c("aut"), email="dhunter@stat.psu.edu"),
+    person("Carter T.", "Butts", role=c("aut"), email="buttsc@uci.edu"),
+    person("Steven M.", "Goodreau", role=c("aut"), email="goodreau@u.washington.edu"), 
+    person("Pavel N.", "Krivitsky", role=c("aut"), email="pavel@statnet.org", 
+      comment=c(ORCID="0000-0002-9101-3362")),
+    person("Martina", "Morris", role=c("aut"), email="morrism@u.washington.edu")
+    )
 Description: Collection of network datasets used primarly in examples and tests
   in other Statnet packages.
 URL: https://statnet.org
