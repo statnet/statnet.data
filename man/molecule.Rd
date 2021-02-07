@@ -32,7 +32,8 @@ Other undirected networks:
 \code{\link{faux.magnolia.high}},
 \code{\link{faux.mesa.high}},
 \code{\link{florentine}},
-\code{\link{kapferer}}
+\code{\link{kapferer}},
+\code{\link{zach}}
 }
 \concept{undirected networks}
 \keyword{datasets}

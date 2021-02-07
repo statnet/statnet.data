@@ -87,7 +87,8 @@ Other undirected networks:
 \code{\link{faux.mesa.high}},
 \code{\link{florentine}},
 \code{\link{kapferer}},
-\code{\link{molecule}}
+\code{\link{molecule}},
+\code{\link{zach}}
 
 Other high school networks: 
 \code{\link{faux.desert.high}},
