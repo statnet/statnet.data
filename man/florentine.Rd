@@ -108,7 +108,8 @@ Applications}, Cambridge: Cambridge University Press.
 Other undirected networks: 
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},
-\code{\link{faux.mesa.high}}
+\code{\link{faux.mesa.high}},
+\code{\link{kapferer}}
 }
 \concept{undirected networks}
 \keyword{datasets}
