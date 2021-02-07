@@ -86,7 +86,8 @@ Other undirected networks:
 \code{\link{ecoli}},
 \code{\link{faux.mesa.high}},
 \code{\link{florentine}},
-\code{\link{kapferer}}
+\code{\link{kapferer}},
+\code{\link{molecule}}
 
 Other high school networks: 
 \code{\link{faux.desert.high}},

@@ -109,7 +109,8 @@ Other undirected networks:
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},
 \code{\link{faux.mesa.high}},
-\code{\link{kapferer}}
+\code{\link{kapferer}},
+\code{\link{molecule}}
 }
 \concept{undirected networks}
 \keyword{datasets}
