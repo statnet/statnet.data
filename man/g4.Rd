@@ -29,9 +29,11 @@ be cited, along with this \code{R} package.
 }
 
 \examples{
-
+\dontrun{
+library(ergm)
 summary(ergm(g4 ~ odegree(3), estimate="MPLE"))
 summary(ergm(g4 ~ odegree(3), control=control.ergm(init=0)))
+}
 
 }
 \seealso{

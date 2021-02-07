@@ -38,7 +38,8 @@ be cited, along with this \code{R} package.
 }
 
 \examples{
-\donttest{
+\dontrun{
+library(latentnet)
 # Only model positive ties:
 tribes.fit < -ergmm(tribes ~ euclidean(d=2, G=3), response="pos")
 # Edge color must be set manually, for green ties to represent alliance

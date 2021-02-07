@@ -55,11 +55,9 @@ Vladimir Batagelj and Andrej Mrvar (2006): \emph{Pajek datasets} \cr
 }
 
 \examples{
-
-\donttest{
+\dontrun{
+library(ergm)
 # Note: This takes a long time.
-data(newcomb)
-
 # Fit a model for the transition between initial (time 0) ranking and
 # ranking after one week (time 1). Note that MCMC interval has been
 # decreased to save time.

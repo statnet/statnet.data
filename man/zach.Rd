@@ -74,34 +74,27 @@ be cited, along with this \code{R} package.
 }
 
 \examples{
-
-data(zach)
-
+if(requireNamespace("network", quietly=TRUE)){
 oldpal <- palette()
 palette(gray((1:8)/8))
 plot(zach, vertex.col="role", displaylabels=TRUE, edge.col="contexts")
 palette(oldpal)
+}
 
-\donttest{
+\dontrun{
 # Fit a binomial-reference ERGM.
-
 zach.fit1 <- ergm(zach~nonzero+sum+nodefactor("role",base=2)+absdiffcat("faction.id"),
                   response="contexts", reference=~Binomial(8),
                   control=control.ergm(MCMLE.trustregion=1000))
-
 mcmc.diagnostics(zach.fit1)
-
 summary(zach.fit1)
-}
-\dontrun{
+
 # This is much slower.
 zach.fit2 <- ergm(zach~nonzero+sum+nodefactor("role",base=2)+transitiveties,
                   response="contexts", reference=~Binomial(8),
                   control=control.ergm(MCMLE.trustregion=1000),
                   eval.loglik=FALSE)
-
 mcmc.diagnostics(zach.fit2)
-
 summary(zach.fit2)
 }
 

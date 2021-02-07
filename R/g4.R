@@ -19,8 +19,10 @@
 #' @keywords datasets
 #' @family directed networks
 #' @examples
-#'
+#' \dontrun{
+#' library(ergm)
 #' summary(ergm(g4 ~ odegree(3), estimate="MPLE"))
 #' summary(ergm(g4 ~ odegree(3), control=control.ergm(init=0)))
+#' }
 #'
 "g4"

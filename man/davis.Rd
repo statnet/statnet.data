@@ -88,9 +88,8 @@ should be cited.  In addition this package should be cited.
 }
 
 \examples{
-
-\donttest{
-data(davis)
+\dontrun{
+library(latetnet)
 # Fit a 2D 2-cluster fit and plot.
 davis.fit<-ergmm(davis~euclidean(d=2,G=2)+rsociality)
 plot(davis.fit,pie=TRUE,rand.eff="sociality")
