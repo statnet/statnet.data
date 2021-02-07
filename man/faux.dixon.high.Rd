@@ -99,6 +99,7 @@ Other directed networks:
 \code{\link{ecoli}},
 \code{\link{emon}},
 \code{\link{faux.desert.high}},
+\code{\link{samplk}},
 \code{\link{sampson}}
 
 Other high school networks: 

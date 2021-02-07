@@ -1,28 +1,25 @@
-#' Networks of positive affection within a monastery
+#' Cumulative network of positive affection within a monastery as a "network"
+#' object
 #'
-#' @description Data collected by Sampson (1969):
+#' A [`network`][network::network] object containing the cumulative "liking"
+#' nominations of Sampson's (1969) monks over the three time points.
 #'
-#' @description - `samplk1`, `samplk2`, `samplk3` -- Longitudinal networks of
-#'   positive affection within a monastery.
+#' @format
+#' The data set is stored as a [`network`][network::network] object with three
+#' vertex attributes:
 #'
-#' @format The `samplk1`, `samplk2`, and `samplk3` datasets are stored as
-#'   [network][network::network] objects with three vertex attributes:
-#'
-#' - `group` -- Groups of novices as classified by Sampson, that is, "Loyal",
-#' "Outcasts", and "Turks", but with a fourth group called the "Waverers" by
-#' White et al. (1975) that comprises two of the original Loyal opposition and
-#' one of the original Outcasts. See the \code{\link{samplike}} data set for the
-#' original classifications of these three waverers.
+#' - `group` -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
+#' and "Turks".
 #' - `cloisterville` -- An indicator of attendance in the minor seminary of
 #' "Cloisterville" before coming to the monastery.
-#' - `vertex.names` -- The given names of the novices. NB: These names have been
-#' corrected as of `ergm` version 3.6.1.
+#' - `vertex.names` -- The given names of the novices.  NB: These names have
+#' been corrected as of `ergm` version 3.6.1; see details below.
 #'
+#' In addition, the data set has an edge attribute:
 #'
+#' - `nominations` -- number of times (out of 3) that monk A nominated monk B.
 #'
-#' @details Three `network` objects containing the "liking"
-#'   nominations of Sampson's (1969) monks at the three time points.
-#'
+#' @details
 #' Sampson (1969) recorded the social interactions among a group of monks while
 #' he was a resident as an experimenter at the cloister.  During his stay, a
 #' political "crisis in the cloister" resulted in the expulsion of four
@@ -45,16 +42,29 @@
 #' over time. They represent three time points in the period during which a new
 #' cohort had entered the monastery near the end of the study but before the
 #' major conflict began.  These three time points are labeled T2, T3, and T4 in
-#' Tables D5 through D16 in the appendices of Sampson's 1969 dissertation.  and
-#' the corresponding network data sets are named `samplk1`,
-#' `samplk2`, and `samplk3`, respectively.
+#' Tables D5 through D16 in the appendices of Sampson's 1969 dissertation.  The
+#' `samplike` data set is the time-aggregated network.  Thus, a tie from
+#' monk A to monk B exists if A nominated B as one of his three (or four, in
+#' case of ties) best friends at any of the three time points.
 #'
-#' `samplk3` is a data set of Hoff, Raftery and Handcock (2002).
+#' See also the data sets [`samplk1`], [`samplk2`], and [`samplk3`], containing
+#' the networks at each of the three individual time points.
 #'
+#' This data set is standard in the social network analysis literature, having
+#' been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
+#' and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
+#' Raftery, and Handcock (2002), among others. This is only a small piece of
+#' the data collected by Sampson.
 #'
+#' This data set was updated for version 2.5 (March 2012) to add the
+#' \code{cloisterville} variable and refine the names. This information is from
+#' de Nooy, Mrvar, and Batagelj (2005). The original vertex names were:
+#' Romul_10, Bonaven_5, Ambrose_9, Berth_6, Peter_4, Louis_11, Victor_8,
+#' Winf_12, John_1, Greg_2, Hugh_14, Boni_15, Mark_7, Albert_16, Amand_13,
+#' Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
+#' original dissertation of Sampson (1969).
 #'
-#' @section Mislabeling in Versions Prior to 3.6.1:
-#' In \code{ergm} versions
+#' @section Mislabeling in Versions Prior to 3.6.1: In \code{ergm} version
 #' 3.6.0 and earlier, The adjacency matrices of the \code{\link{samplike}},
 #' \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}}
 #' networks reflected the original Sampson (1969) ordering of the names even
@@ -68,69 +78,23 @@
 #' \code{ergm} version 3.6.0 and earlier is: Ramuald, Bonaventure, Ambrose,
 #' Berthold, Peter, Louis, Victor, Winfrid, John Bosco, Gregory, Hugh,
 #' Boniface, Mark, Albert, Amand, Basil, Elias, Simplicius.
+#' @seealso florentine, network, plot.network, ergm
+#' @references White, H.C., Boorman, S.A. and Breiger, R.L. (1976).
+#' \emph{Social structure from multiple networks. I. Blockmodels of roles and
+#' positions.} American Journal of Sociology, 81(4), 730-780.
 #'
-#' @references
-#' White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure
-#' from multiple networks. I. Blockmodels of roles and positions. *American
-#' Journal of Sociology*, 81(4), 730-780.
-#'
-#' Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) *Exploratory Social
-#' Network Analysis with Pajek*, Cambridge: Cambridge University Press
-#'
-#'
-#' @source
-#' Sampson, S.~F. (1968), *A novitiate in a period of change: An
-#' experimental and case study of relationships*, Unpublished Ph.D.
+#' Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
+#' Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
+#' @source Sampson, S.~F. (1968), \emph{A novitiate in a period of change: An
+#' experimental and case study of relationships,} Unpublished Ph.D.
 #' dissertation, Department of Sociology, Cornell University.
 #'
 #' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
 #'
-#' @name sampson
-#' @aliases sampson samplk samplk1 samplk2 samplk3#'
 #' @docType data
+#' @name sampson
+#' @aliases sampson samplike
 #' @family directed networks
+#' @family Sampson's datasets
 #' @keywords datasets
-"samplk1"
-
-#' @rdname sampson
-"samplk2"
-
-#' @rdname sampson
-"samplk3"
-
-
-
-#' @rdname sampson
-#' @description - `samplike` --  "liking" nominations of Sampson's (1969) monks
-#'   over the three time points.
-#'
-#' @format
-#' The dataset `samplike` is stored as a [`network`][network::network] object with three
-#' vertex attributes:
-#'
-#' - `group` -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
-#' and "Turks".
-#' - `cloisterville` -- An indicator of attendance in the minor seminary of
-#' "Cloisterville" before coming to the monastery.
-#' - `vertex.names` -- The given names of the novices.  NB: These names have
-#' been corrected as of \code{ergm} version 3.6.1; see details below.
-#'
-#' In addition, the data set has an edge attribute,
-#'
-#' - `nominations` -- the number of times (out of 3) that monk A nominated monk B.
-#'
-#' This data set is standard in the social network analysis literature, having
-#' been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
-#' and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
-#' Raftery, and Handcock (2002), among others. This is only a small piece of the
-#' data collected by Sampson.
-#'
-#' This data set was updated for version 2.5 (March 2012) to add the
-#' `cloisterville` variable and refine the names. This information is from de
-#' Nooy, Mrvar, and Batagelj (2005). The original vertex names were: `Romul_10`,
-#' `Bonaven_5`, `Ambrose_9`, `Berth_6`, `Peter_4`, `Louis_11`, `Victor_8`,
-#' `Winf_12`, `John_1`, `Greg_2`, `Hugh_14`, `Boni_15`, `Mark_7`, `Albert_16`,
-#' `Amand_13`, `Basil_3`, `Elias_17`, `Simp_18`. The numbers indicate the
-#' ordering used in the original dissertation of Sampson (1969).
-#'
 "samplike"

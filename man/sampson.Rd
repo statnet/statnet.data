@@ -3,33 +3,11 @@
 \docType{data}
 \name{sampson}
 \alias{sampson}
-\alias{samplk1}
-\alias{samplk}
-\alias{samplk2}
-\alias{samplk3#'}
-\alias{samplk3}
 \alias{samplike}
-\title{Networks of positive affection within a monastery}
+\title{Cumulative network of positive affection within a monastery as a "network"
+object}
 \format{
-The \code{samplk1}, \code{samplk2}, and \code{samplk3} datasets are stored as
-\link[network:network]{network} objects with three vertex attributes:
-\itemize{
-\item \code{group} -- Groups of novices as classified by Sampson, that is, "Loyal",
-"Outcasts", and "Turks", but with a fourth group called the "Waverers" by
-White et al. (1975) that comprises two of the original Loyal opposition and
-one of the original Outcasts. See the \code{\link{samplike}} data set for the
-original classifications of these three waverers.
-\item \code{cloisterville} -- An indicator of attendance in the minor seminary of
-"Cloisterville" before coming to the monastery.
-\item \code{vertex.names} -- The given names of the novices. NB: These names have been
-corrected as of \code{ergm} version 3.6.1.
-}
-
-An object of class \code{network} of length 5.
-
-An object of class \code{network} of length 5.
-
-The dataset \code{samplike} is stored as a \code{\link[network:network]{network}} object with three
+The data set is stored as a \code{\link[network:network]{network}} object with three
 vertex attributes:
 \itemize{
 \item \code{group} -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
@@ -40,58 +18,26 @@ and "Turks".
 been corrected as of \code{ergm} version 3.6.1; see details below.
 }
 
-In addition, the data set has an edge attribute,
+In addition, the data set has an edge attribute:
 \itemize{
-\item \code{nominations} -- the number of times (out of 3) that monk A nominated monk B.
+\item \code{nominations} -- number of times (out of 3) that monk A nominated monk B.
 }
-
-This data set is standard in the social network analysis literature, having
-been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
-and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
-Raftery, and Handcock (2002), among others. This is only a small piece of the
-data collected by Sampson.
-
-This data set was updated for version 2.5 (March 2012) to add the
-\code{cloisterville} variable and refine the names. This information is from de
-Nooy, Mrvar, and Batagelj (2005). The original vertex names were: \code{Romul_10},
-\code{Bonaven_5}, \code{Ambrose_9}, \code{Berth_6}, \code{Peter_4}, \code{Louis_11}, \code{Victor_8},
-\code{Winf_12}, \code{John_1}, \code{Greg_2}, \code{Hugh_14}, \code{Boni_15}, \code{Mark_7}, \code{Albert_16},
-\code{Amand_13}, \code{Basil_3}, \code{Elias_17}, \code{Simp_18}. The numbers indicate the
-ordering used in the original dissertation of Sampson (1969).
 }
 \source{
 Sampson, S.~F. (1968), \emph{A novitiate in a period of change: An
-experimental and case study of relationships}, Unpublished Ph.D.
+experimental and case study of relationships,} Unpublished Ph.D.
 dissertation, Department of Sociology, Cornell University.
 
 \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
 }
 \usage{
-samplk1
-
-samplk2
-
-samplk3
-
 samplike
 }
 \description{
-Data collected by Sampson (1969):
-
-\itemize{
-\item \code{samplk1}, \code{samplk2}, \code{samplk3} -- Longitudinal networks of
-positive affection within a monastery.
-}
-
-\itemize{
-\item \code{samplike} --  "liking" nominations of Sampson's (1969) monks
-over the three time points.
-}
+A \code{\link[network:network]{network}} object containing the cumulative "liking"
+nominations of Sampson's (1969) monks over the three time points.
 }
 \details{
-Three \code{network} objects containing the "liking"
-nominations of Sampson's (1969) monks at the three time points.
-
 Sampson (1969) recorded the social interactions among a group of monks while
 he was a resident as an experimenter at the cloister.  During his stay, a
 political "crisis in the cloister" resulted in the expulsion of four
@@ -114,15 +60,30 @@ The data were gathered at three times to capture changes in group sentiment
 over time. They represent three time points in the period during which a new
 cohort had entered the monastery near the end of the study but before the
 major conflict began.  These three time points are labeled T2, T3, and T4 in
-Tables D5 through D16 in the appendices of Sampson's 1969 dissertation.  and
-the corresponding network data sets are named \code{samplk1},
-\code{samplk2}, and \code{samplk3}, respectively.
+Tables D5 through D16 in the appendices of Sampson's 1969 dissertation.  The
+\code{samplike} data set is the time-aggregated network.  Thus, a tie from
+monk A to monk B exists if A nominated B as one of his three (or four, in
+case of ties) best friends at any of the three time points.
 
-\code{samplk3} is a data set of Hoff, Raftery and Handcock (2002).
+See also the data sets \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}}, containing
+the networks at each of the three individual time points.
+
+This data set is standard in the social network analysis literature, having
+been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
+and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
+Raftery, and Handcock (2002), among others. This is only a small piece of
+the data collected by Sampson.
+
+This data set was updated for version 2.5 (March 2012) to add the
+\code{cloisterville} variable and refine the names. This information is from
+de Nooy, Mrvar, and Batagelj (2005). The original vertex names were:
+Romul_10, Bonaven_5, Ambrose_9, Berth_6, Peter_4, Louis_11, Victor_8,
+Winf_12, John_1, Greg_2, Hugh_14, Boni_15, Mark_7, Albert_16, Amand_13,
+Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
+original dissertation of Sampson (1969).
 }
 \section{Mislabeling in Versions Prior to 3.6.1}{
-
-In \code{ergm} versions
+ In \code{ergm} version
 3.6.0 and earlier, The adjacency matrices of the \code{\link{samplike}},
 \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}}
 networks reflected the original Sampson (1969) ordering of the names even
@@ -139,19 +100,26 @@ Boniface, Mark, Albert, Amand, Basil, Elias, Simplicius.
 }
 
 \references{
-White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure
-from multiple networks. I. Blockmodels of roles and positions. \emph{American
-Journal of Sociology}, 81(4), 730-780.
+White, H.C., Boorman, S.A. and Breiger, R.L. (1976).
+\emph{Social structure from multiple networks. I. Blockmodels of roles and
+positions.} American Journal of Sociology, 81(4), 730-780.
 
-Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory Social
-Network Analysis with Pajek}, Cambridge: Cambridge University Press
+Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
+Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
 }
 \seealso{
+florentine, network, plot.network, ergm
+
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},
 \code{\link{faux.desert.high}},
-\code{\link{faux.dixon.high}}
+\code{\link{faux.dixon.high}},
+\code{\link{samplk}}
+
+Other Sampson's datasets: 
+\code{\link{samplk}}
 }
+\concept{Sampson's datasets}
 \concept{directed networks}
 \keyword{datasets}

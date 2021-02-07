@@ -104,6 +104,7 @@ Other directed networks:
 \code{\link{ecoli}},
 \code{\link{emon}},
 \code{\link{faux.dixon.high}},
+\code{\link{samplk}},
 \code{\link{sampson}}
 }
 \concept{directed networks}
