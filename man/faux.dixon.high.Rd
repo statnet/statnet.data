@@ -101,7 +101,8 @@ Other directed networks:
 \code{\link{faux.desert.high}},
 \code{\link{g4}},
 \code{\link{samplk}},
-\code{\link{sampson}}
+\code{\link{sampson}},
+\code{\link{tribes}}
 
 Other high school networks: 
 \code{\link{faux.desert.high}},

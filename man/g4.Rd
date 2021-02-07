@@ -43,7 +43,8 @@ Other directed networks:
 \code{\link{faux.desert.high}},
 \code{\link{faux.dixon.high}},
 \code{\link{samplk}},
-\code{\link{sampson}}
+\code{\link{sampson}},
+\code{\link{tribes}}
 }
 \concept{directed networks}
 \keyword{datasets}

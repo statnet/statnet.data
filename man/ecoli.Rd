@@ -48,7 +48,8 @@ Other directed networks:
 \code{\link{faux.dixon.high}},
 \code{\link{g4}},
 \code{\link{samplk}},
-\code{\link{sampson}}
+\code{\link{sampson}},
+\code{\link{tribes}}
 
 Other undirected networks: 
 \code{\link{faux.magnolia.high}},
