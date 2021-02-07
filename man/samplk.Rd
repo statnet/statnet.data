@@ -123,6 +123,7 @@ Other directed networks:
 \code{\link{emon}},
 \code{\link{faux.desert.high}},
 \code{\link{faux.dixon.high}},
+\code{\link{g4}},
 \code{\link{sampson}}
 
 Other Sampson's datasets: 
