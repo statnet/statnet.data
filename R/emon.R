@@ -93,18 +93,6 @@
 #'
 #' @template data
 #'
-#' @section Visualization:
-#'
-#' ```{r emon-figure, echo=FALSE, fig.width=8, fig.height=16}
-#' set.seed(666)
-#' layout(matrix(1:8, nrow=4, ncol=2, byrow=TRUE))
-#' for(n in names(emon)) {
-#'   network::plot.network(emon[[n]])
-#'   title(main = paste0("emon$", n))
-#' }
-#' layout(1)
-#' ```
-#'
 #' @source Drabek, T.E.; Tamminga, H.L.; Kilijanek, T.S.; and Adams, C.R.
 #'   (1981). *Data from Managing Multiorganizational Emergency Responses:
 #'   Emergent Search and Rescue Networks in Natural Disaster and Remote Area

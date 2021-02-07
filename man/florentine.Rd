@@ -87,11 +87,6 @@ data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
 }
 
-\section{Visualizations}{
-
-\figure{florentine-figure-1.png}
-}
-
 \examples{
 if(requireNamespace("network", quietly=TRUE)) {
   nflo <- network::network(flo,directed=FALSE)    # Convert to network object form

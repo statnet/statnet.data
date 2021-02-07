@@ -86,11 +86,6 @@ Martina Morris. 2003 \emph{statnet: Software tools for the Statistical
 Modeling of Network Data} https://statnet.org.
 }
 
-\section{Visualizations}{
-
-\figure{faux.desert.high-figure-1.png}
-}
-
 \references{
 Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
 adolescents from harm. Findings from the National Longitudinal Study on

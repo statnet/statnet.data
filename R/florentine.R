@@ -75,20 +75,6 @@
 #' dominant in this struggle: one revolved around the infamous Medicis (9), the
 #' other around the powerful Strozzis (15).
 #'
-#' @section Visualizations:
-#'
-#' ```{r florentine-figure, echo=FALSE, fig.width=10, fig.height=4}
-#' set.seed(666)
-#' layout(matrix(1:2, 1, 2))
-#' network::plot.network(flomarriage,
-#'   displaylabels=TRUE, boxed.labels = TRUE, label.cex=0.75)
-#' title(main="flomarriage")
-#' network::plot.network(flobusiness,
-#'   displaylabels=TRUE, boxed.labels = TRUE, label.cex=0.75)
-#' title(main="flobusiness")
-#' layout(1)
-#' ```
-#'
 #' @keywords datasets
 "flobusiness"
 

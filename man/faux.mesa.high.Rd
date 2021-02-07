@@ -74,11 +74,6 @@ Martina Morris. 2003 \emph{statnet: Software tools for the Statistical
 Modeling of Network Data} \url{https://statnet.org}.
 }
 
-\section{Visualizations}{
-
-\figure{faux.mesa.high-figure-1.png}
-}
-
 \references{
 Hunter D.R., Goodreau S.M. and Handcock M.S. (2008). Goodness of Fit
 of Social Network Models, \emph{Journal of the American Statistical

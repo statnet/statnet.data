@@ -19,17 +19,6 @@
 #'
 #' @template data
 #'
-#' @section Visualization:
-#' ```{r, ecoli-figure, echo=FALSE, fig.asp=0.5}
-#' set.seed(666)
-#' layout(matrix(1:2, 1, 2))
-#' network::plot.network(ecoli1)
-#' title(main="ecoli1")
-#' network::plot.network(ecoli2)
-#' title(main="ecoli2")
-#' layout(1)
-#' ```
-#'
 #' @references
 #'
 #' Salgado et al (2001), Regulondb (version 3.2): Transcriptional Regulation

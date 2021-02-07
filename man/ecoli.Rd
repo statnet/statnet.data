@@ -28,10 +28,6 @@ data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
 }
 
-\section{Visualization}{
-\figure{ecoli-figure-1.png}
-}
-
 \references{
 Salgado et al (2001), Regulondb (version 3.2): Transcriptional Regulation
 and Operon Organization in Escherichia Coli K-12, \emph{Nucleic Acids
