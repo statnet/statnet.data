@@ -19,6 +19,9 @@
 #'
 #' @template data
 #'
+#' @source The data set is based on the RegulonDB network (Salgado et al, 2001)
+#' and was modified by Shen-Orr et al (2002).
+#'
 #' @references
 #'
 #' Salgado et al (2001), Regulondb (version 3.2): Transcriptional Regulation
@@ -30,8 +33,5 @@
 #'
 #' Saul, Z. M., & Filkov, V. (2007). Exploring biological network structure
 #' using exponential random graph models. Bioinformatics, 23(19), 2604-2611.
-#'
-#' @source The data set is based on the RegulonDB network (Salgado et al, 2001)
-#' and was modified by Shen-Orr et al (2002).
 #'
 c("ecoli1", "ecoli2")
