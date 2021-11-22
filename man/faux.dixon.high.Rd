@@ -38,7 +38,7 @@ take the AddHealth survey or who were not listed by name on the schools'
 student roster are not included in the stucture files.  In addition, we
 removed any students with missing values for race, grade or sex.
 
-The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the original data:\if{html}{\out{<div class="r">}}\preformatted{dixon.fit <- ergm(
+The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the original data:\if{html}{\out{<div class="sourceCode r">}}\preformatted{dixon.fit <- ergm(
   original.net ~ edges + mutual + absdiff("grade") +
     nodefactor("race", base=5) + nodefactor("grade", base=3) +
     nodefactor("sex") + nodematch("race", diff = TRUE) +
@@ -57,7 +57,7 @@ The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the origina
 }\if{html}{\out{</div>}}
 
 Then the faux.dixon.high dataset was created by simulating a single network
-from the above model fit:\if{html}{\out{<div class="r">}}\preformatted{faux.dixon.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
+from the above model fit:\if{html}{\out{<div class="sourceCode r">}}\preformatted{faux.dixon.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
   constraint = "edges")
 }\if{html}{\out{</div>}}
 }
@@ -72,6 +72,10 @@ network. The network is named \code{faux.dixon.high}.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 
  If the source of the data set does not
 specified otherwise, this data set is protected by the Creative Commons

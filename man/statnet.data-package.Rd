@@ -7,8 +7,7 @@
 \alias{statnet.data}
 \title{statnet.data: Network Datasets for the Statnet Suite}
 \description{
-Collection of network datasets used primarly in examples and tests
-  in other Statnet packages.
+Collection of network datasets used primarly in examples and tests in other Statnet packages.
 }
 \section{Other packages with network data}{
 

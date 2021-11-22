@@ -34,7 +34,7 @@ Missing values for each were randomly assigned with weights determined by
 the size of the attribute classes in the school.
 
 The following \code{\link[ergm:ergm]{ergm::ergm()}} formula was used to fit a model to the
-original data:\if{html}{\out{<div class="r">}}\preformatted{~ edges + nodefactor("Grade") + nodefactor("Race") + nodefactor("Sex") +
+original data:\if{html}{\out{<div class="sourceCode r">}}\preformatted{~ edges + nodefactor("Grade") + nodefactor("Race") + nodefactor("Sex") +
   nodematch("Grade",diff=TRUE) + nodematch("Race",diff=TRUE) +
   nodematch("Sex",diff=FALSE) + gwdegree(1.0,fixed=TRUE) +
   gwesp(1.0,fixed=TRUE) + gwdsp(1.0,fixed=TRUE)
@@ -60,6 +60,10 @@ US, with a student body that is largely Hispanic and Native American.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 
  If the source of the data set does not
 specified otherwise, this data set is protected by the Creative Commons
@@ -88,6 +92,7 @@ Adolescent Health, \emph{Journal of the American Medical Association}, 278:
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other undirected networks: 
+\code{\link{davis}},
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},
 \code{\link{florentine}},

@@ -6,6 +6,13 @@
 \alias{ecoli1}
 \alias{ecoli2}
 \title{Two versions of an E. Coli network dataset}
+\format{
+\code{ecoli1} - Directed \code{\link[network:network]{network}} object with 423 nodes and 519 edges.
+Vertex attributes: \code{self}.
+
+\code{ecoli2} - Undirected \code{\link[network:network]{network}} object with 418 nodes and 519 edges.
+Vertex attributes: \code{self}.
+}
 \source{
 The data set is based on the RegulonDB network (Salgado et al, 2001)
 and was modified by Shen-Orr et al (2002).
@@ -26,6 +33,10 @@ exhibit only self-regulation in \code{ecoli1}) are removed, leaving 418 nodes.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 }
 
 \references{
@@ -53,6 +64,7 @@ Other directed networks:
 \code{\link{tribes}}
 
 Other undirected networks: 
+\code{\link{davis}},
 \code{\link{faux.magnolia.high}},
 \code{\link{faux.mesa.high}},
 \code{\link{florentine}},

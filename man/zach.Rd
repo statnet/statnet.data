@@ -71,6 +71,10 @@ was observed was 7.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 }
 
 \examples{
@@ -108,6 +112,7 @@ Fission in Small Groups. \emph{Journal of Anthropological Research}, 33(4),
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other undirected networks: 
+\code{\link{davis}},
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},
 \code{\link{faux.mesa.high}},

@@ -56,12 +56,17 @@ dataset, whereas \code{kapferer2} is the full 43-individual dataset.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 }
 
 \seealso{
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other undirected networks: 
+\code{\link{davis}},
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},
 \code{\link{faux.mesa.high}},

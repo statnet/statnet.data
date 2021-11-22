@@ -5,13 +5,13 @@
 \alias{davis}
 \title{Southern Women Data Set (Davis) as a bipartite network object}
 \format{
-A bipartite \code{\link[network:network]{network}} object with 32 nodes (18 women and
-14 social events) and 89 edges.
+A bipartite \code{\link[network:network]{network}} object with 32 nodes (18
+women and 14 social events) and 89 edges.
 }
 \source{
 Linton C. Freeman (2003). \emph{Finding Social Groups: A Meta-Analysis of the
 Southern Women Data}, In Ronald Breiger, Kathleen Carley and Philippa
-Pattison, eds. Dynamic Social Network Modeling and Analysis. Washington: The
+Pattison, eds. \emph{Dynamic Social Network Modeling and Analysis}. Washington: The
 National Academies Press.
 }
 \usage{
@@ -78,21 +78,18 @@ new tool for analyzing data.
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
 
-#'
-If the source of the data set does not specified otherwise, this data set is
-protected by the Creative Commons License
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
 \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
-
-When publishing results obtained using this data set the original authors
-should be cited.  In addition this package should be cited.
 }
 
 \examples{
 \dontrun{
+# This dataset is used to demonstrate latent space model:
 library(latetnet)
 # Fit a 2D 2-cluster fit and plot.
-davis.fit<-ergmm(davis~euclidean(d=2,G=2)+rsociality)
-plot(davis.fit,pie=TRUE,rand.eff="sociality")
+davis.fit <- ergmm(davis ~ euclidean(d=2, G=2) + rsociality)
+plot(davis.fit, pie=TRUE, rand.eff="sociality")
 }
 
 }
@@ -102,11 +99,21 @@ University of Chicago Press.
 
 Linton C. Freeman (2003). \emph{Finding Social Groups: A Meta-Analysis of the
 Southern Women Data}, In Ronald Breiger, Kathleen Carley and Philippa
-Pattison, eds. Dynamic Social Network Modeling and Analysis. Washington: The
+Pattison, eds. \emph{Dynamic Social Network Modeling and Analysis}. Washington: The
 National Academies Press.
 }
 \seealso{
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
+
+Other undirected networks: 
+\code{\link{ecoli}},
+\code{\link{faux.magnolia.high}},
+\code{\link{faux.mesa.high}},
+\code{\link{florentine}},
+\code{\link{kapferer}},
+\code{\link{molecule}},
+\code{\link{zach}}
 }
 \concept{bipartite networks}
+\concept{undirected networks}
 \keyword{data}

@@ -34,7 +34,7 @@ two individuals who both named each other as a friend.  All missing race,
 grade, and sex values were replaced by a random draw with weights determined
 by the size of the attribute classes in the school.
 
-The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the original data:\if{html}{\out{<div class="r">}}\preformatted{magnolia.fit <- ergm(
+The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the original data:\if{html}{\out{<div class="sourceCode r">}}\preformatted{magnolia.fit <- ergm(
   magnolia ~ edges + nodematch("Grade",diff=T) + nodematch("Race",diff=T) +
     nodematch("Sex",diff=F) + absdiff("Grade") + gwesp(0.25,fixed=T),
   burnin=10000, interval=1000, MCMCsamplesize=2500, maxit=25,
@@ -43,7 +43,7 @@ The following \code{\link[ergm:ergm]{ergm::ergm()}} model was fit to the origina
 }\if{html}{\out{</div>}}
 
 Then the \code{faux.magnolia.high} dataset was created by simulating a single
-network from the above model fit:\if{html}{\out{<div class="r">}}\preformatted{faux.magnolia.high <- simulate (magnolia.fit, nsim=1, burnin=100000000,
+network from the above model fit:\if{html}{\out{<div class="sourceCode r">}}\preformatted{faux.magnolia.high <- simulate (magnolia.fit, nsim=1, burnin=100000000,
   constraint = "edges") \}
 }\if{html}{\out{</div>}}
 }
@@ -59,6 +59,10 @@ which it is based are large and located in the southern US.
  When publishing results obtained using this
 data set, the original authors (see sections Source and References) should
 be cited, along with this \code{R} package.
+
+If the section Source of the data set does not specified otherwise, this data
+set is protected by the Creative Commons License
+\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 
  If the source of the data set does not
 specified otherwise, this data set is protected by the Creative Commons
@@ -83,6 +87,7 @@ Adolescent Health, \emph{Journal of the American Medical Association}, 278:
 \code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
 
 Other undirected networks: 
+\code{\link{davis}},
 \code{\link{ecoli}},
 \code{\link{faux.mesa.high}},
 \code{\link{florentine}},
