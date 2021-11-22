@@ -65,14 +65,6 @@
 #'
 #' @template data
 #'
-#' @section Licenses and Citation:#'
-#' If the source of the data set does not specified otherwise, this data set is
-#' protected by the Creative Commons License
-#' \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
-#'
-#' When publishing results obtained using this data set the original authors
-#' should be cited.  In addition this package should be cited.
-#'
 #' @references
 #' Davis, A., Gardner, B. B. and M. R. Gardner (1941) *Deep South*, Chicago: The
 #' University of Chicago Press.
