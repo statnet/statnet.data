@@ -13,7 +13,7 @@ data_format <- function(net) {
   out <- character(0)
 
   append(out) <- paste0(
-    if(network::is.directed(net)) "Directer" else "Undirected",
+    if(network::is.directed(net)) "Directed" else "Undirected",
     if(network::is.bipartite(net)) " bipartite" else NULL,
     " [`network`][network::network] object with ", network::network.size(net),
       " nodes and ",
