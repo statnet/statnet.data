@@ -63,8 +63,6 @@ set is protected by the Creative Commons License
 }
 
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other undirected networks: 
 \code{\link{davis}},
 \code{\link{ecoli}},

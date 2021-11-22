@@ -51,8 +51,6 @@ Saul, Z. M., & Filkov, V. (2007). Exploring biological network structure
 using exponential random graph models. Bioinformatics, 23(19), 2604-2611.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{emon}},
 \code{\link{faux.desert.high}},

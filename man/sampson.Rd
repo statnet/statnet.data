@@ -118,8 +118,6 @@ Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
 Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 florentine, network, plot.network, ergm
 
 Other directed networks: 

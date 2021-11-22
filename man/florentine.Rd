@@ -107,8 +107,6 @@ Wasserman, S. and Faust, K. (1994) \emph{Social Network Analysis: Methods and
 Applications}, Cambridge: Cambridge University Press.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other undirected networks: 
 \code{\link{davis}},
 \code{\link{ecoli}},

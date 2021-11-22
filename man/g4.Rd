@@ -41,8 +41,6 @@ summary(ergm(g4 ~ odegree(3), control=control.ergm(init=0)))
 
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

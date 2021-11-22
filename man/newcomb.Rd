@@ -91,8 +91,6 @@ networks, I. Blockmodels of roles and positions. American Journal of
 Sociology, 81, 730-780.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

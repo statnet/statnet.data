@@ -97,8 +97,6 @@ Adolescent Health, \emph{Journal of the American Medical Association}, 278:
 823-32.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

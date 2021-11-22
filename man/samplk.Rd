@@ -128,8 +128,6 @@ Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
 Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

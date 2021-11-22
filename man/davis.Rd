@@ -103,8 +103,6 @@ Pattison, eds. \emph{Dynamic Social Network Modeling and Analysis}. Washington: 
 National Academies Press.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other undirected networks: 
 \code{\link{ecoli}},
 \code{\link{faux.magnolia.high}},

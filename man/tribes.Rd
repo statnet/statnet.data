@@ -70,8 +70,6 @@ central highlands, New Guinea. Southwestern Journal of Anthropology, 10,
 1-43.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{emon}},

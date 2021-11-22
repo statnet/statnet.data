@@ -109,8 +109,6 @@ Fission in Small Groups. \emph{Journal of Anthropological Research}, 33(4),
 452-473.
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other undirected networks: 
 \code{\link{davis}},
 \code{\link{ecoli}},

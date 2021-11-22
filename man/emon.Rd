@@ -110,8 +110,6 @@ for(i in 1:length(emon))
 }
 }
 \seealso{
-\code{\link[network:network]{network::network()}}, \code{\link[network:plot.network]{network::plot.network()}}
-
 Other directed networks: 
 \code{\link{ecoli}},
 \code{\link{faux.desert.high}},

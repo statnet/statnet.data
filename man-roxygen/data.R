@@ -7,5 +7,3 @@
 #' set is protected by the Creative Commons License
 #' \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 #'
-#' @seealso [network::network()], [network::plot.network()]
-#'
