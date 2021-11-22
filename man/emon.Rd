@@ -5,20 +5,20 @@
 \alias{emon}
 \title{Interorganizational Search and Rescue Networks (Drabek et al.)}
 \format{
-A list of 7 \link[network:network]{network} objects:\tabular{lll}{
-   Name \tab Class \tab Description \cr
-   \code{Cheyenne} \tab network \tab Cheyenne SAR EMON \cr
-   \code{HurrFrederic} \tab network \tab Hurricane Frederic SAR EMON \cr
-   \code{LakePomona} \tab network \tab Lake Pomona SAR EMON \cr
-   \code{MtSi} \tab network \tab Mt. Si SAR EMON \cr
-   \code{MtStHelens} \tab network \tab Mt. St. Helens SAR EMON \cr
-   \code{Texas} \tab network \tab Texas Hill Country SAR EMON \cr
-   \code{Wichita} \tab network \tab Wichita Falls SAR EMON \cr
+A list of 7 \link[network:network]{network} objects:\tabular{ll}{
+   \strong{Name} \tab \strong{Description} \cr
+   \code{Cheyenne} \tab Cheyenne SAR EMON \cr
+   \code{HurrFrederic} \tab Hurricane Frederic SAR EMON \cr
+   \code{LakePomona} \tab Lake Pomona SAR EMON \cr
+   \code{MtSi} \tab Mt. Si SAR EMON \cr
+   \code{MtStHelens} \tab Mt. St. Helens SAR EMON \cr
+   \code{Texas} \tab Texas Hill Country SAR EMON \cr
+   \code{Wichita} \tab Wichita Falls SAR EMON \cr
 }
 
 
 Each network has one edge attribute:\tabular{lll}{
-   Name \tab Class \tab Description \cr
+   \strong{Name} \tab \strong{Class} \tab \strong{Description} \cr
    \code{Frequency} \tab numeric \tab Interaction frequency (1-4; 1=most frequent) \cr
 }
 

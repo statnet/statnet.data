@@ -10,11 +10,10 @@
 #' @format A list of 7 [network][network::network] objects:
 #'
 #' ```{r, echo=FALSE}
-#' knitr::kable(
+#' md_table(
 #'   data.frame(
 #'     Name = c("`Cheyenne`", "`HurrFrederic`", "`LakePomona`", "`MtSi`",
 #'       "`MtStHelens`", "`Texas`", "`Wichita`"),
-#'     Class = "network",
 #'     Description = c(
 #'       "Cheyenne SAR EMON",
 #'       "Hurricane Frederic SAR EMON",
@@ -31,8 +30,8 @@
 #' Each network has one edge attribute:
 #'
 #' ```{r, echo=FALSE}
-#' knitr::kable(data.frame(
-#'   Name = "`Frequency`",
+#' md_table(data.frame(
+#'   Name = md_code("Frequency"),
 #'   Class = "numeric",
 #'   Description = "Interaction frequency (1-4; 1=most frequent)"
 #' ))
