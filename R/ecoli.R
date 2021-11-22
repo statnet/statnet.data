@@ -5,6 +5,10 @@
 #' from one node to another indicates that the first encodes the transcription
 #' factor that regulates the second.
 #'
+#' @format `ecoli1` - `r data_format(ecoli1)`
+#'
+#' @format `ecoli2` - `r data_format(ecoli2)`
+#'
 #' @details The network object `ecoli1` is directed, with 423 nodes and 519
 #'   arcs. The object `ecoli2` is an undirected version of the same network, in
 #'   which all arcs are treated as edges and the five isolated nodes (which
