@@ -6,9 +6,8 @@
 #' The data is originally from Davis, Gardner and Gardner (1941) via
 #' UCINET
 #'
-#' @format
-#' A bipartite [`network`][network::network] object with 32 nodes (18 women and
-#' 14 social events) and 89 edges.
+#' @format A bipartite [`network`][network::network] object with 32 nodes (18
+#'   women and 14 social events) and 89 edges.
 #'
 #' @details
 #' This documentation is taken from Freeman (2003) in his usual lucid
@@ -65,20 +64,21 @@
 #'
 #' @template data
 #'
+#' @source
+#' Linton C. Freeman (2003). *Finding Social Groups: A Meta-Analysis of the
+#' Southern Women Data*, In Ronald Breiger, Kathleen Carley and Philippa
+#' Pattison, eds. *Dynamic Social Network Modeling and Analysis*. Washington: The
+#' National Academies Press.
+#'
 #' @references
 #' Davis, A., Gardner, B. B. and M. R. Gardner (1941) *Deep South*, Chicago: The
 #' University of Chicago Press.
 #'
 #' Linton C. Freeman (2003). *Finding Social Groups: A Meta-Analysis of the
 #' Southern Women Data*, In Ronald Breiger, Kathleen Carley and Philippa
-#' Pattison, eds. Dynamic Social Network Modeling and Analysis. Washington: The
+#' Pattison, eds. *Dynamic Social Network Modeling and Analysis*. Washington: The
 #' National Academies Press.
 #'
-#' @source
-#' Linton C. Freeman (2003). *Finding Social Groups: A Meta-Analysis of the
-#' Southern Women Data*, In Ronald Breiger, Kathleen Carley and Philippa
-#' Pattison, eds. Dynamic Social Network Modeling and Analysis. Washington: The
-#' National Academies Press.
 #'
 #' @keywords data
 #' @docType data
