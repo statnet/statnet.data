@@ -24,7 +24,7 @@ data_format <- function(net) {
   if(length(vattr) > 0) {
     append(out) <- paste0(
       "Vertex attributes: ",
-      paste(bQuote(vattr), collapse=", "),
+      paste(md_code(vattr), collapse=", "),
       "."
     )
   }
@@ -33,7 +33,7 @@ data_format <- function(net) {
   if(length(eattr) > 0) {
     append(out) <- paste0(
       "Edge attributes: ",
-      paste(bQuote(vattr), collapse=", "),
+      paste(md_code(vattr), collapse=", "),
       "."
     )
   }
@@ -42,10 +42,24 @@ data_format <- function(net) {
 
 
 
-# Utils -------------------------------------------------------------------
 
-# backquote a vector
-bQuote <- function(x) paste0("`", x, "`")
+
+# Markdown formatting -----------------------------------------------------
+
+md_code <- function(x) paste0("`", x, "`")
+
+md_bold <- function(x) paste0("**", x, "**")
+
+md_italics <- function(x) paste0("*", x, "*")
+
+md_table <- function(x, ...) {
+  names(x) <- md_bold(names(x))
+  knitr::kable(x, ...)
+}
+
+
+
+# Utils -------------------------------------------------------------------
 
 # Assignment version of append()
 "append<-" <- function(x, value) {
