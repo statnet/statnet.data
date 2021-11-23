@@ -19,14 +19,6 @@
 #' (non-Hisp.), Black (non-Hisp.), Hispanic, Asian (non-Hisp.), Native American,
 #' and Other (non-Hisp.)
 #'
-#' @template data
-#'
-#' @references
-#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
-#' adolescents from harm. Findings from the National Longitudinal Study on
-#' Adolescent Health, *Journal of the American Medical Association*, 278:
-#' 823-32.
-#'
 #' @source The data set is based upon a model fit to data from two school
 #' communities from the AddHealth Study, Wave I (Resnick et al., 1997). It was
 #' constructed as follows:
@@ -57,6 +49,15 @@
 #' faux.magnolia.high <- simulate (magnolia.fit, nsim=1, burnin=100000000,
 #'   constraint = "edges") }
 #' ```
+#'
+#'
+#' @template data
+#'
+#' @references
+#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
+#' adolescents from harm. Findings from the National Longitudinal Study on
+#' Adolescent Health, *Journal of the American Medical Association*, 278:
+#' 823-32.
 #'
 #' @family undirected networks
 #' @family high school networks

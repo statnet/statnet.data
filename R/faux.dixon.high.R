@@ -1,4 +1,4 @@
-#' Faux dixon High School as a network object
+#' Faux Dixon High School as a network object
 #'
 #' This data set represents a simulation of a directed in-school friendship
 #' network. The network is named `faux.dixon.high`.
@@ -17,14 +17,6 @@
 #' Hispanic identity and one on race, and takes six possible values: White
 #' (non-Hisp.), Black (non-Hisp.), Hispanic, Asian (non-Hisp.), Native American,
 #' and Other (non-Hisp.)
-#'
-#' @template data
-#'
-#' @references
-#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
-#' adolescents from harm. Findings from the National Longitudinal Study on
-#' Adolescent Health, *Journal of the American Medical Association*, 278:
-#' 823-32.
 #'
 #' @source The data set is simulation based upon an ergm model fit to data from
 #' one school community from the AddHealth Study, Wave I (Resnick et al.,
@@ -70,6 +62,15 @@
 #' faux.dixon.high <- simulate(desert.fit, nsim=1, burnin=1e+8,
 #'   constraint = "edges")
 #' ```
+#'
+#' @template data
+#'
+#' @references
+#' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
+#' adolescents from harm. Findings from the National Longitudinal Study on
+#' Adolescent Health, *Journal of the American Medical Association*, 278:
+#' 823-32.
+#'
 #'
 #' @family directed networks
 #' @family high school networks

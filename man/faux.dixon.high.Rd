@@ -3,7 +3,7 @@
 \docType{data}
 \name{faux.dixon.high}
 \alias{faux.dixon.high}
-\title{Faux dixon High School as a network object}
+\title{Faux Dixon High School as a network object}
 \format{
 \code{faux.dixon.high} is a \code{\link[network:network]{network}} object
 with 248 vertices (students, in this case) and 1197 directed edges

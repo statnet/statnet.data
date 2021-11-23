@@ -68,18 +68,6 @@ When publishing results obtained using this data set, the original authors
 Handcock M, Hunter D, Butts C, Goodreau S, Krivitsky P, Morris M,
 Bojanowski M (2021). \emph{statnet.data: Network Datasets for the Statnet
 Suite}. R package version 0.1-0, <URL: https://statnet.org>.
-
- If the source of the data set does not
-specified otherwise, this data set is protected by the Creative Commons
-License \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
-
-When publishing results obtained using this data set, the original authors
-(Resnick et al, 1997) should be cited. In addition this package should be
-cited as:
-
-Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and
-Martina Morris. 2003 \emph{statnet: Software tools for the Statistical
-Modeling of Network Data} \url{https://statnet.org}.
 }
 
 \references{
