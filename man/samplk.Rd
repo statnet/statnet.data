@@ -93,13 +93,17 @@ Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
 original dissertation of Sampson (1969).
 }
 \section{Licenses and Citation}{
- When publishing results obtained using this
-data set, the original authors (see sections Source and References) should
-be cited, along with this \code{R} package.
+ If the section Source of this page does not
+specify otherwise, this data set is protected by the Creative Commons
+License \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
 
-If the section Source of the data set does not specified otherwise, this data
-set is protected by the Creative Commons License
-\url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
+When publishing results obtained using this data set, the original authors
+(see sections Source and/or References) should be cited, along with this
+\code{R} package. To cite this package please use the following:
+
+Handcock M, Hunter D, Butts C, Goodreau S, Krivitsky P, Morris M,
+Bojanowski M (2021). \emph{statnet.data: Network Datasets for the Statnet
+Suite}. R package version 0.1-0, <URL: https://statnet.org>.
 }
 
 \section{Mislabeling in Versions Prior to 3.6.1}{
