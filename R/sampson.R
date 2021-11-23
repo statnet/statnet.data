@@ -1,12 +1,9 @@
-#' Cumulative network of positive affection within a monastery as a "network"
-#' object
+#' Cumulative network of positive affection within a monastery
 #'
-#' A [`network`][network::network] object containing the cumulative "liking"
-#' nominations of Sampson's (1969) monks over the three time points.
+#' Cumulative "liking" nominations of Sampson's (1969) monks over the three time
+#' points.
 #'
-#' @format
-#' The data set is stored as a [`network`][network::network] object with three
-#' vertex attributes:
+#' @format `r data_format(samplike)` The vertex attributes are:
 #'
 #' - `group` -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
 #' and "Turks".
@@ -47,9 +44,6 @@
 #' monk A to monk B exists if A nominated B as one of his three (or four, in
 #' case of ties) best friends at any of the three time points.
 #'
-#' See also the data sets [`samplk1`], [`samplk2`], and [`samplk3`], containing
-#' the networks at each of the three individual time points.
-#'
 #' This data set is standard in the social network analysis literature, having
 #' been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
 #' and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
@@ -80,18 +74,47 @@
 #' \code{ergm} version 3.6.0 and earlier is: Ramuald, Bonaventure, Ambrose,
 #' Berthold, Peter, Louis, Victor, Winfrid, John Bosco, Gregory, Hugh,
 #' Boniface, Mark, Albert, Amand, Basil, Elias, Simplicius.
-#' @seealso florentine, network, plot.network, ergm
-#' @references White, H.C., Boorman, S.A. and Breiger, R.L. (1976).
-#' \emph{Social structure from multiple networks. I. Blockmodels of roles and
-#' positions.} American Journal of Sociology, 81(4), 730-780.
 #'
-#' Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
-#' Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
-#' @source Sampson, S.~F. (1968), \emph{A novitiate in a period of change: An
-#' experimental and case study of relationships,} Unpublished Ph.D.
+#' @source PhD thesis of Sampson (1968) and Pajek datasets at
+#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
+#'
+#' @seealso See also the data sets [`samplk1`], [`samplk2`], and [`samplk3`],
+#'   containing the networks at each of the three individual time points.
+#'
+#' @references
+#' Breiger, R. L., Boorman, S. A., & Arabie, P. (1975). An algorithm for
+#' clustering relational data with applications to social network analysis and
+#' comparison with multidimensional scaling. *Journal of Mathematical Psychology*,
+#' 12(3), 328-383.
+#'
+#' Fienberg, S. E., Meyer, M. M., & Wasserman, S. S. (1985). Statistical
+#' analysis of multiple sociometric relations. *Journal of the American
+#' Statistical Association*, 80(389), 51-67.
+#'
+#' Hoff, P. D., Raftery, A. E., & Handcock, M. S. (2002). Latent space
+#' approaches to social network analysis. *Journal of the American Statistical
+#' Association*, 97(460), 1090-1098.
+#'
+#' Holland, P. W., Laskey, K. B., & Leinhardt, S. (1983). Stochastic
+#' blockmodels: First steps. *Social Networks*, 5(2), 109-137.
+#'
+#' Holland, P. W., & Leinhardt, S. (1981). An exponential family of probability
+#' distributions for directed graphs. *Journal of the American Statistical
+#' Association*, 76(373), 33-50.
+#'
+#' de Nooy, W., Mrvar, A., Batagelj, V. (2005) *Exploratory Social Network
+#' Analysis with Pajek*, Cambridge: Cambridge University Press
+#'
+#' Reitz, K. P. (1982). Using log linear analysis with network data: Another
+#' look at Sampson's monastery. *Social Networks*, 4(3), 243-256.
+#'
+#' Sampson, S. F. (1968), *A novitiate in a period of change: An
+#' experimental and case study of relationships*, Unpublished Ph.D.
 #' dissertation, Department of Sociology, Cornell University.
 #'
-#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
+#' White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure from
+#' multiple networks. I. Blockmodels of roles and positions. *American Journal
+#' of Sociology*, 81(4), 730-780.
 #'
 #' @docType data
 #' @name sampson

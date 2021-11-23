@@ -4,11 +4,11 @@
 \name{sampson}
 \alias{sampson}
 \alias{samplike}
-\title{Cumulative network of positive affection within a monastery as a "network"
-object}
+\title{Cumulative network of positive affection within a monastery}
 \format{
-The data set is stored as a \code{\link[network:network]{network}} object with three
-vertex attributes:
+Directed \code{\link[network:network]{network}} object with 18 nodes and 88 edges.
+Vertex attributes: \code{cloisterville}, \code{group}.
+Edge attributes: \code{cloisterville}, \code{group}. The vertex attributes are:
 \itemize{
 \item \code{group} -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
 and "Turks".
@@ -24,18 +24,15 @@ In addition, the data set has an edge attribute:
 }
 }
 \source{
-Sampson, S.~F. (1968), \emph{A novitiate in a period of change: An
-experimental and case study of relationships,} Unpublished Ph.D.
-dissertation, Department of Sociology, Cornell University.
-
+PhD thesis of Sampson (1968) and Pajek datasets at
 \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
 }
 \usage{
 samplike
 }
 \description{
-A \code{\link[network:network]{network}} object containing the cumulative "liking"
-nominations of Sampson's (1969) monks over the three time points.
+Cumulative "liking" nominations of Sampson's (1969) monks over the three time
+points.
 }
 \details{
 Sampson (1969) recorded the social interactions among a group of monks while
@@ -64,9 +61,6 @@ Tables D5 through D16 in the appendices of Sampson's 1969 dissertation.  The
 \code{samplike} data set is the time-aggregated network.  Thus, a tie from
 monk A to monk B exists if A nominated B as one of his three (or four, in
 case of ties) best friends at any of the three time points.
-
-See also the data sets \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}}, containing
-the networks at each of the three individual time points.
 
 This data set is standard in the social network analysis literature, having
 been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
@@ -114,15 +108,43 @@ Boniface, Mark, Albert, Amand, Basil, Elias, Simplicius.
 }
 
 \references{
-White, H.C., Boorman, S.A. and Breiger, R.L. (1976).
-\emph{Social structure from multiple networks. I. Blockmodels of roles and
-positions.} American Journal of Sociology, 81(4), 730-780.
+Breiger, R. L., Boorman, S. A., & Arabie, P. (1975). An algorithm for
+clustering relational data with applications to social network analysis and
+comparison with multidimensional scaling. \emph{Journal of Mathematical Psychology},
+12(3), 328-383.
 
-Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
-Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
+Fienberg, S. E., Meyer, M. M., & Wasserman, S. S. (1985). Statistical
+analysis of multiple sociometric relations. \emph{Journal of the American
+Statistical Association}, 80(389), 51-67.
+
+Hoff, P. D., Raftery, A. E., & Handcock, M. S. (2002). Latent space
+approaches to social network analysis. \emph{Journal of the American Statistical
+Association}, 97(460), 1090-1098.
+
+Holland, P. W., Laskey, K. B., & Leinhardt, S. (1983). Stochastic
+blockmodels: First steps. \emph{Social Networks}, 5(2), 109-137.
+
+Holland, P. W., & Leinhardt, S. (1981). An exponential family of probability
+distributions for directed graphs. \emph{Journal of the American Statistical
+Association}, 76(373), 33-50.
+
+de Nooy, W., Mrvar, A., Batagelj, V. (2005) \emph{Exploratory Social Network
+Analysis with Pajek}, Cambridge: Cambridge University Press
+
+Reitz, K. P. (1982). Using log linear analysis with network data: Another
+look at Sampson's monastery. \emph{Social Networks}, 4(3), 243-256.
+
+Sampson, S. F. (1968), \emph{A novitiate in a period of change: An
+experimental and case study of relationships}, Unpublished Ph.D.
+dissertation, Department of Sociology, Cornell University.
+
+White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure from
+multiple networks. I. Blockmodels of roles and positions. \emph{American Journal
+of Sociology}, 81(4), 730-780.
 }
 \seealso{
-florentine, network, plot.network, ergm
+See also the data sets \code{\link{samplk1}}, \code{\link{samplk2}}, and \code{\link{samplk3}},
+containing the networks at each of the three individual time points.
 
 Other directed networks: 
 \code{\link{ecoli}},
