@@ -1,5 +1,4 @@
-#' Longitudinal networks of positive affection within a monastery as a "network"
-#' object
+#' Longitudinal networks of positive affection within a monastery
 #'
 #' Three [`network`][network::network] objects (`samplk1`, `samplk2`, and
 #' `samplk3`) containing the "liking" nominations of Sampson's (1969) monks at
@@ -11,7 +10,7 @@
 #'
 #' - `group` -- Groups of novices as classified by Sampson, that is, "Loyal",
 #' "Outcasts", and "Turks", but with a fourth group called the "Waverers" by
-#' White et al. (1975) that comprises two of the original Loyal opposition and
+#' Breiger et al. (1975) that comprises two of the original Loyal opposition and
 #' one of the original Outcasts. See the [`samplike`] data set for the
 #' original classifications of these three waverers.
 #' - `cloisterville` -- An indicator of attendance in the minor seminary of
@@ -46,67 +45,92 @@
 #' the corresponding network data sets are named `samplk1`, `samplk2`, and
 #' `samplk3`, respectively.
 #'
-#' See also the data set [`sampson`] containing the time-aggregated
-#' graph `samplike`.
-#'
-#' `samplk3` is a data set of Hoff, Raftery and Handcock (2002).
-#'
 #' This data set is standard in the social network analysis literature, having
 #' been modeled by Holland and Leinhardt (1981), Reitz (1982), Holland, Laskey
 #' and Leinhardt (1983), Fienberg, Meyer, and Wasserman (1981), and Hoff,
 #' Raftery, and Handcock (2002), among others. This is only a small piece of the
-#' data collected by Sampson.
+#' data collected by Sampson. `samplk3` is a data set of Hoff, Raftery and
+#' Handcock (2002).
 #'
 #' This data set was updated for version 2.5 (March 2012) to add the
-#' `cloisterville` variable and refine the names. This information is from
-#' de Nooy, Mrvar, and Batagelj (2005). The original vertex names were:
-#' Romul_10, Bonaven_5, Ambrose_9, Berth_6, Peter_4, Louis_11, Victor_8,
-#' Winf_12, John_1, Greg_2, Hugh_14, Boni_15, Mark_7, Albert_16, Amand_13,
-#' Basil_3, Elias_17, Simp_18. The numbers indicate the ordering used in the
-#' original dissertation of Sampson (1969).
+#' `cloisterville` variable and refine the names. This information is from de
+#' Nooy, Mrvar, and Batagelj (2005). The original vertex names were: `Romul_10`,
+#' `Bonaven_5`, `Ambrose_9`, `Berth_6`, `Peter_4`, `Louis_11`, `Victor_8`,
+#' `Winf_12`, `John_1`, `Greg_2`, `Hugh_14`, `Boni_15`, `Mark_7`, `Albert_16`,
+#' `Amand_13`, `Basil_3`, `Elias_17`, `Simp_18.` The numbers indicate the
+#' ordering used in the original dissertation of Sampson (1969).
 #'
 #' @template data
 #'
-#' @section Mislabeling in Versions Prior to 3.6.1:
-#' In `ergm` versions 3.6.0 and earlier, The adjacency matrices of the
-#' `samplike`, `samplk1`, `samplk2`, and `samplk3` networks reflected the
-#' original Sampson (1969) ordering of the names even though the vertex labels
-#' used the name order of de Nooy, Mrvar, and Batagelj (2005). That is, in
-#' `ergm` version 3.6.0 and earlier, the vertices were mislabeled. The correct
-#' order is the same one given in Tables D5, D9, and D13 of Sampson (1969): John
-#' Bosco, Gregory, Basil, Peter, Bonaventure, Berthold, Mark, Victor, Ambrose,
-#' Romauld (Sampson uses both spellings "Romauld" and "Ramauld" in the
-#' dissertation), Louis, Winfrid, Amand, Hugh, Boniface, Albert, Elias,
-#' Simplicius. By contrast, the order given in \code{ergm} version 3.6.0 and
-#' earlier is: Ramuald, Bonaventure, Ambrose, Berthold, Peter, Louis, Victor,
-#' Winfrid, John Bosco, Gregory, Hugh, Boniface, Mark, Albert, Amand, Basil,
-#' Elias, Simplicius.
+#' @section Mislabeling in Earlier Versions:
+#' This dataset was part of the `ergm` package. In `ergm` versions 3.6.0 and
+#' earlier, The adjacency matrices of the `samplike`, `samplk1`, `samplk2`, and
+#' `samplk3` networks reflected the original Sampson (1969) ordering of the
+#' names even though the vertex labels used the name order of de Nooy, Mrvar,
+#' and Batagelj (2005). That is, in `ergm` version 3.6.0 and earlier, the
+#' vertices were mislabeled. The correct order is the same one given in Tables
+#' D5, D9, and D13 of Sampson (1969): John Bosco, Gregory, Basil, Peter,
+#' Bonaventure, Berthold, Mark, Victor, Ambrose, Romauld (Sampson uses both
+#' spellings "Romauld" and "Ramauld" in the dissertation), Louis, Winfrid,
+#' Amand, Hugh, Boniface, Albert, Elias, Simplicius. By contrast, the order
+#' given in \code{ergm} version 3.6.0 and earlier is: Ramuald, Bonaventure,
+#' Ambrose, Berthold, Peter, Louis, Victor, Winfrid, John Bosco, Gregory, Hugh,
+#' Boniface, Mark, Albert, Amand, Basil, Elias, Simplicius.
+#'
+#' @source PhD thesis of Sampson (1968) and Pajek datasets at
+#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
 #'
 #' @references
-#' White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure
-#' from multiple networks. I. Blockmodels of roles and positions. *American
-#' Journal of Sociology*, 81(4), 730-780.
+#' Breiger, R. L., Boorman, S. A., & Arabie, P. (1975). An algorithm for
+#' clustering relational data with applications to social network analysis and
+#' comparison with multidimensional scaling. *Journal of Mathematical Psychology*,
+#' 12(3), 328-383.
 #'
-#' Wouter de Nooy, Andrej Mrvar, Vladimir Batagelj (2005) \emph{Exploratory
-#' Social Network Analysis with Pajek}, Cambridge: Cambridge University Press
+#' Fienberg, S. E., Meyer, M. M., & Wasserman, S. S. (1985). Statistical
+#' analysis of multiple sociometric relations. *Journal of the American
+#' Statistical Association*, 80(389), 51-67.
 #'
-#' @source
-#' Sampson, S.~F. (1968), \emph{A novitiate in a period of change: An
-#' experimental and case study of relationships,} Unpublished Ph.D.
+#' Hoff, P. D., Raftery, A. E., & Handcock, M. S. (2002). Latent space
+#' approaches to social network analysis. *Journal of the American Statistical
+#' Association*, 97(460), 1090-1098.
+#'
+#' Holland, P. W., Laskey, K. B., & Leinhardt, S. (1983). Stochastic
+#' blockmodels: First steps. *Social Networks*, 5(2), 109-137.
+#'
+#' Holland, P. W., & Leinhardt, S. (1981). An exponential family of probability
+#' distributions for directed graphs. *Journal of the American Statistical
+#' Association*, 76(373), 33-50.
+#'
+#' de Nooy, W., Mrvar, A., Batagelj, V. (2005) *Exploratory Social Network
+#' Analysis with Pajek*, Cambridge: Cambridge University Press
+#'
+#' Reitz, K. P. (1982). Using log linear analysis with network data: Another
+#' look at Sampson's monastery. *Social Networks*, 4(3), 243-256.
+#'
+#' Sampson, S. F. (1968), *A novitiate in a period of change: An
+#' experimental and case study of relationships*, Unpublished Ph.D.
 #' dissertation, Department of Sociology, Cornell University.
 #'
-#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/esna/sampson.htm}
+#' White, H.C., Boorman, S.A. and Breiger, R.L. (1976). Social structure from
+#' multiple networks. I. Blockmodels of roles and positions. *American Journal
+#' of Sociology*, 81(4), 730-780.
 #'
 #' @docType data
 #' @name samplk
 #' @aliases samplk samplk1 samplk2 samplk3
 #' @family directed networks
 #' @family Sampson's datasets
+#'
+#' @seealso See also the data set [`sampson`] containing the time-aggregated
+#' graph `samplike`.
+#'
 #' @keywords datasets
 "samplk1"
 
 #' @rdname samplk
+#' @format
 "samplk2"
 
 #' @rdname samplk
+#' @format
 "samplk3"
