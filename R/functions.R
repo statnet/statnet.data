@@ -8,6 +8,7 @@
 #
 # @return qwerty
 data_format <- function(net) {
+  stopifnot(inherits(net, "network"))
   requireNamespace("network")
 
   out <- character(0)
