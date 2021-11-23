@@ -20,18 +20,6 @@
 #'
 #' @template data
 #'
-#' @section Licenses and Citation: If the source of the data set does not
-#' specified otherwise, this data set is protected by the Creative Commons
-#' License \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
-#'
-#' When publishing results obtained using this data set, the original authors
-#' (Resnick et al, 1997) should be cited. In addition this package should be
-#' cited as:
-#'
-#' Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and
-#' Martina Morris. 2003 *statnet: Software tools for the Statistical
-#' Modeling of Network Data* https://statnet.org.
-#'
 #' @source The data set is simulation based upon an ergm model fit to data from
 #' one school community from the AddHealth Study, Wave I (Resnick et al.,
 #' 1997). It was constructed as follows:
