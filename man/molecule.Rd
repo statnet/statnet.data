@@ -5,18 +5,15 @@
 \alias{molecule}
 \title{Synthetic network with 20 nodes and 28 edges}
 \format{
-Undirected \code{\link[network:network]{network}} object with 20 nodes and 28
-edges
+Undirected \code{\link[network:network]{network}} object with 20 nodes and 28 edges.
 }
 \usage{
 molecule
 }
 \description{
 This is a synthetic network of 20 nodes that is used as an example within
-the \code{ergm} documentation. It has an interesting elongated shape
-\itemize{
-\item reminencent of a chemical molecule.
-}
+the \code{ergm} documentation. It has an interesting elongated shape - reminiscent
+of a chemical molecule.
 }
 \section{Licenses and Citation}{
  If the section Source of this page does not
