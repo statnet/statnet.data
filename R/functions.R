@@ -5,6 +5,7 @@
 #'
 #' @param object data object to be described see "Methods" section below for
 #'   available methods
+#' @param ... arguments passed to/from other methods. Currently ignored.
 #'
 #' @return Character scalar with the Markdown text.
 #'
@@ -69,6 +70,6 @@ md_table <- function(x, ...) {
 # Utils -------------------------------------------------------------------
 
 # Assignment version of append()
-"append<-" <- function(x, value, ...) {
+"append<-" <- function(x, ..., value) {
   append(x, values=value, ...)
 }
