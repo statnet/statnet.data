@@ -41,7 +41,7 @@ data_format.network <- function(object, ...) {
   if(length(eattr) > 0) {
     append(out) <- paste0(
       "Edge attributes: ",
-      paste(md_code(vattr), collapse=", "),
+      paste(md_code(eattr), collapse=", "),
       "."
     )
   }

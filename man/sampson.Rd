@@ -8,7 +8,7 @@
 \format{
 Directed \code{\link[network:network]{network}} object with 18 nodes and 88 edges.
 Vertex attributes: \code{cloisterville}, \code{group}.
-Edge attributes: \code{cloisterville}, \code{group}. The vertex attributes are:
+Edge attributes: \code{nominations}. The vertex attributes are:
 \itemize{
 \item \code{group} -- Groups of novices as classified by Sampson: "Loyal", "Outcasts",
 and "Turks".

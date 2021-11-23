@@ -6,7 +6,7 @@
 \title{Read Highland Tribes}
 \format{
 Undirected \code{\link[network:network]{network}} object with 16 nodes and 120 edges.
-Edge attributes: ``. Vertex attributes are:
+Edge attributes: \code{neg}, \code{pos}, \code{sign}, \code{sign.012}. Vertex attributes are:
 \itemize{
 \item \code{vertex.names} -- Character attribute with names of tribes.
 }
