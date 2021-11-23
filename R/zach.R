@@ -3,15 +3,7 @@
 #' Zachary (1977) reported observations of social relations in a university
 #' karate club
 #'
-#' @format
-#' The data are represented as a [`network`][network::network] object, with an
-#' edge attribute
-#'
-#' - `contexts` -- the number of contexts of interaction for that pair of
-#' actors.
-#'
-#' In addition, the following vertex attributes are
-#' provided:
+#' @format `r data_format(zach)` The vertex attributes are:
 #'
 #' - `club` -- the club in which the actor ended up
 #' - `faction` -- faction alignment of the actor as recorded by Zachary
@@ -20,6 +12,13 @@
 #' (strongly John's)
 #'  - `role` -- role of the actor in the network (Instructor, Member, or
 #'  President)
+#'
+#' The edge attributes are:
+#'
+#' - `contexts` -- the number of contexts of interaction for that pair of
+#' actors.
+#'
+#'
 #'
 #' @details
 #' Zachary (1977) reported observations of social relations in a university
@@ -50,17 +49,15 @@
 #'
 #' @template data
 #'
+#' @source Sociomatrix in machine-readable format was retrieved from
+#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/ucidata.htm} originally
+#' coming from Zachary (1977)
+#'
 #' @references
 #' Zachary, WW (1977). An Information Flow Model for Conflict and
 #' Fission in Small Groups. \emph{Journal of Anthropological Research}, 33(4),
 #' 452-473.
 #'
-#' @source Zachary, WW (1977). An Information Flow Model for Conflict and
-#' Fission in Small Groups. \emph{Journal of Anthropological Research}, 33(4),
-#' 452-473.
-#'
-#' Sociomatrix in machine-readable format was retrieved from
-#' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/ucidata.htm}.
 #'
 #' @name zach
 #' @docType data

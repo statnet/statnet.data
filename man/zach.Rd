@@ -5,15 +5,9 @@
 \alias{zach}
 \title{Karate club social network of Zachary (1977)}
 \format{
-The data are represented as a \code{\link[network:network]{network}} object, with an
-edge attribute
-\itemize{
-\item \code{contexts} -- the number of contexts of interaction for that pair of
-actors.
-}
-
-In addition, the following vertex attributes are
-provided:
+Undirected \code{\link[network:network]{network}} object with 34 nodes and 78 edges.
+Vertex attributes: \code{club}, \code{faction}, \code{faction.id}, \code{role}.
+Edge attributes: \code{contexts}. The vertex attributes are:
 \itemize{
 \item \code{club} -- the club in which the actor ended up
 \item \code{faction} -- faction alignment of the actor as recorded by Zachary
@@ -23,14 +17,17 @@ Hi's), -1 (weakly Mr. Hi's), 0 (neutral), +1 (weakly John's), and +2
 \item \code{role} -- role of the actor in the network (Instructor, Member, or
 President)
 }
+
+The edge attributes are:
+\itemize{
+\item \code{contexts} -- the number of contexts of interaction for that pair of
+actors.
+}
 }
 \source{
-Zachary, WW (1977). An Information Flow Model for Conflict and
-Fission in Small Groups. \emph{Journal of Anthropological Research}, 33(4),
-452-473.
-
 Sociomatrix in machine-readable format was retrieved from
-\url{http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/ucidata.htm}.
+\url{http://vlado.fmf.uni-lj.si/pub/networks/data/ucinet/ucidata.htm} originally
+coming from Zachary (1977)
 }
 \usage{
 zach
