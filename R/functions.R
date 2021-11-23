@@ -62,6 +62,6 @@ md_table <- function(x, ...) {
 # Utils -------------------------------------------------------------------
 
 # Assignment version of append()
-"append<-" <- function(x, value) {
-  append(x, values=value)
+"append<-" <- function(x, value, ...) {
+  append(x, values=value, ...)
 }
