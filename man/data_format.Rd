@@ -12,6 +12,8 @@ data_format(object, ...)
 \arguments{
 \item{object}{data object to be described see "Methods" section below for
 available methods}
+
+\item{...}{arguments passed to/from other methods. Currently ignored.}
 }
 \value{
 Character scalar with the Markdown text.
