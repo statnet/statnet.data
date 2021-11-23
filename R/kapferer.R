@@ -4,18 +4,21 @@
 #' from June 1965 to August 1965, involves interactions among workers in a
 #' tailor shop as observed by Kapferer himself.
 #'
-#' @format Two `network` objects, `kapferer` and `kapferer2`. The `kapferer`
-#'   dataset contains only the 39 individuals who were present at both
-#'   data-collection time periods.  However, these data only reflect data
-#'   collected during the first period. See Details. The individuals' names are
-#'   included as a nodal covariate called `names`.
+#' @format The data is available as two objects:
 #'
-#' @details
-#' An interaction is defined by Kapferer as "continuous uninterrupted social
-#' activity involving the participation of at least two persons"; only
-#' transactions that were relatively frequent are recorded. All of the
-#' interactions in this particular dataset are "sociational", as opposed to
-#' "instrumental".  Kapferer explains the difference (p. 164) as follows:
+#' - `kapferer` -- `r data_format(kapferer)`
+#' - `kapferer2` -- `r data_format(kapferer2)`
+#'
+#' The `kapferer` dataset contains only the 39 individuals who were present at
+#' both data-collection time periods. However, these data only reflect data
+#' collected during the first period. See Details. The individuals' names are
+#' included as a nodal covariate called `names`.
+#'
+#' @details An interaction is defined by Kapferer as "continuous uninterrupted
+#'   social activity involving the participation of at least two persons"; only
+#'   transactions that were relatively frequent are recorded. All of the
+#'   interactions in this particular dataset are "sociational", as opposed to
+#'   "instrumental".  Kapferer explains the difference (p. 164) as follows:
 #'
 #' "I have classed as transactions which were sociational in content those
 #' where the activity was markedly convivial such as general conversation, the
@@ -43,9 +46,12 @@
 #' Kapferer, Bruce (1972), *Strategy and Transaction in an African Factory*,
 #' Manchester University Press.
 #'
-#' @docType data
 #' @name kapferer
 #' @aliases kapferer kapferer2 tailor
 #' @family undirected networks
 #' @keywords datasets
 "kapferer"
+
+#' @rdname kapferer
+#' @format
+"kapferer2"

@@ -7,11 +7,20 @@
 \alias{tailor}
 \title{Kapferer's tailor shop data}
 \format{
-Two \code{network} objects, \code{kapferer} and \code{kapferer2}. The \code{kapferer}
-dataset contains only the 39 individuals who were present at both
-data-collection time periods.  However, these data only reflect data
+The data is available as two objects:
+\itemize{
+\item \code{kapferer} -- Undirected \code{\link[network:network]{network}} object with 39 nodes and 158 edges.
+Vertex attributes: \code{names}.
+\item \code{kapferer2} -- Undirected \code{\link[network:network]{network}} object with 43 nodes and 190 edges.
+Vertex attributes: \code{names}.
+}
+
+The \code{kapferer} dataset contains only the 39 individuals who were present at
+both data-collection time periods. However, these data only reflect data
 collected during the first period. See Details. The individuals' names are
 included as a nodal covariate called \code{names}.
+
+
 }
 \source{
 Kapferer, Bruce (1972), \emph{Strategy and Transaction in an African Factory},
@@ -19,6 +28,8 @@ Manchester University Press.
 }
 \usage{
 kapferer
+
+kapferer2
 }
 \description{
 This well-known social network dataset, collected by Bruce Kapferer in Zambia
@@ -26,8 +37,8 @@ from June 1965 to August 1965, involves interactions among workers in a
 tailor shop as observed by Kapferer himself.
 }
 \details{
-An interaction is defined by Kapferer as "continuous uninterrupted social
-activity involving the participation of at least two persons"; only
+An interaction is defined by Kapferer as "continuous uninterrupted
+social activity involving the participation of at least two persons"; only
 transactions that were relatively frequent are recorded. All of the
 interactions in this particular dataset are "sociational", as opposed to
 "instrumental".  Kapferer explains the difference (p. 164) as follows:
