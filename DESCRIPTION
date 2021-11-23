@@ -18,7 +18,7 @@ Description: Collection of network datasets used primarly in examples and tests
   in other Statnet packages.
 URL: https://statnet.org
 BugReports: https://github.com/statnet/statnet.data/issues
-License: GPL (>= 3)
+License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
