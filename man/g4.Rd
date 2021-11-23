@@ -5,8 +5,7 @@
 \alias{g4}
 \title{Goodreau's four node network as a "network" object}
 \format{
-It is a directed network of four nodes and five ties stored as a
-\code{\link[network:network]{network}} object.
+Directed \code{\link[network:network]{network}} object with 4 nodes and 5 edges.
 }
 \source{
 Steve Goodreau

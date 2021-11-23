@@ -2,8 +2,7 @@
 #'
 #' This is an example thought of by Steve Goodreau.
 #'
-#' @format It is a directed network of four nodes and five ties stored as a
-#'   [`network`][network::network] object.
+#' @format `r data_format(g4)`
 #'
 #' @details
 #' It is interesting because the maximum likelihood estimator of the model with
