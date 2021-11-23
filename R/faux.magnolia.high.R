@@ -21,18 +21,6 @@
 #'
 #' @template data
 #'
-#' @section Licenses and Citation: If the source of the data set does not
-#' specified otherwise, this data set is protected by the Creative Commons
-#' License \url{https://creativecommons.org/licenses/by-nc-nd/2.5/}.
-#'
-#' When publishing results obtained using this data set, the original authors
-#' (Resnick et al, 1997) should be cited. In addition this package should be
-#' cited as:
-#'
-#' Mark S. Handcock, David R. Hunter, Carter T. Butts, Steven M. Goodreau, and
-#' Martina Morris. 2003 *statnet: Software tools for the Statistical
-#' Modeling of Network Data* \url{https://statnet.org}.
-#'
 #' @references
 #' Resnick M.D., Bearman, P.S., Blum R.W. et al. (1997). Protecting
 #' adolescents from harm. Findings from the National Longitudinal Study on
