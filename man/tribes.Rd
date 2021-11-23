@@ -5,8 +5,8 @@
 \alias{tribes}
 \title{Read Highland Tribes}
 \format{
-An undirected \code{\link[network:network]{network}} object with no loops, having the following
-vertex attributes:
+Undirected \code{\link[network:network]{network}} object with 16 nodes and 120 edges.
+Edge attributes: ``. Vertex attributes are:
 \itemize{
 \item \code{vertex.names} -- Character attribute with names of tribes.
 }
@@ -23,8 +23,9 @@ Because of limitations of \code{network} objects, the object itself is a complet
 graph, and is thus meaningless if used directly or plotted.
 }
 \source{
+Taken from UCINET IV and
 \url{http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm#gama},
-with corrections from Read (1954).
+which cites Hage & Harrary (1983), with corrections from Read (1954).
 }
 \description{
 A network of political alliances and enmities among the 16 Gahuku-Gama
@@ -66,12 +67,11 @@ plot(tribes.fit3,
 }
 }
 \references{
-Taken from UCINET IV, which cites the following:
+Hage P. and Harary F. (1983). \emph{Structural models in anthropology}. Cambridge:
+Cambridge University Press. (See p 56-60).
 
-Hage P. and Harary F. (1983). Structural models in anthropology. Cambridge:
-Cambridge University Press. (See p 56-60).  Read K. (1954). Cultures of the
-central highlands, New Guinea. Southwestern Journal of Anthropology, 10,
-1-43.
+Read K. (1954). Cultures of the central highlands, New Guinea. \emph{Southwestern
+Journal of Anthropology}, 10, 1-43.
 }
 \seealso{
 Other directed networks: 

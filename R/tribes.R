@@ -4,9 +4,7 @@
 #' sub-tribes of Eastern Central Highlands of New Guinea, documented by Read
 #' (1954). This network shows 3 clusters.
 #'
-#' @format
-#'  An undirected [`network`][network::network] object with no loops, having the following
-#'  vertex attributes:
+#' @format `r data_format(tribes)` Vertex attributes are:
 #'
 #'  - `vertex.names` -- Character attribute with names of tribes.
 #'
@@ -22,17 +20,17 @@
 #'
 #' @template data
 #'
-#' @references
-#' Taken from UCINET IV, which cites the following:
-#'
-#' Hage P. and Harary F. (1983). Structural models in anthropology. Cambridge:
-#' Cambridge University Press. (See p 56-60).  Read K. (1954). Cultures of the
-#' central highlands, New Guinea. Southwestern Journal of Anthropology, 10,
-#' 1-43.
-#'
 #' @source
+#' Taken from UCINET IV and
 #' \url{http://vlado.fmf.uni-lj.si/pub/networks/data/UciNet/UciData.htm#gama},
-#' with corrections from Read (1954).
+#' which cites Hage & Harrary (1983), with corrections from Read (1954).
+#'
+#' @references
+#' Hage P. and Harary F. (1983). *Structural models in anthropology*. Cambridge:
+#' Cambridge University Press. (See p 56-60).
+#'
+#' Read K. (1954). Cultures of the central highlands, New Guinea. *Southwestern
+#' Journal of Anthropology*, 10, 1-43.
 #'
 #' @name tribes
 #' @docType data
