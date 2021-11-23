@@ -9,18 +9,6 @@
 \description{
 Collection of network datasets used primarly in examples and tests in other Statnet packages.
 }
-\section{Other packages with network data}{
-
-\itemize{
-\item \code{ergmharris} (Harris 2013) -- Local Health Department network data set
-\item \code{networkdata} (Schoch 2020) -- Big collection of network datasets assembled
-from different sources. Not available on CRAN due to its size, but can be
-obtained from \href{https://github.com/schochastics/networkdata}{GitHub}. Data are
-provided as \code{igraph} objects but can be easily converted to \code{network} with
-\href{https://cran.r-project.org/package=intergraph}{\code{intergraph::asNetwork()}}
-}
-}
-
 \references{
 Jenine K. Harris (2013). ergmharris: Local Health Department network data
 set. R package version 1.0. https://CRAN.R-project.org/package=ergmharris
@@ -29,12 +17,15 @@ David Schoch (2020). networkdata: Repository of Network Datasets. R package
 version 0.1.3. https://github.com/schochastics/networkdata
 }
 \seealso{
-Useful links:
+Other packages with network data:
 \itemize{
-  \item \url{https://statnet.org}
-  \item Report bugs at \url{https://github.com/statnet/statnet.data/issues}
+\item \strong{ergmharris} (Harris 2013) -- Local Health Department network data set
+\item \strong{networkdata} (Schoch 2020) -- Big collection of network datasets assembled
+from different sources. Not available on CRAN due to its size, but can be
+obtained from \href{https://github.com/schochastics/networkdata}{GitHub}. Data are
+provided as \code{igraph} objects but can be easily converted to \code{network} with
+\href{https://cran.r-project.org/package=intergraph}{\code{intergraph::asNetwork()}}
 }
-
 }
 \author{
 \strong{Maintainer}: Michal Bojanowski \email{michal2992@gmail.com} (\href{https://orcid.org/0000-0001-7503-852X}{ORCID})
