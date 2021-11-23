@@ -51,7 +51,7 @@
 #' @format Data `flomarriage` is identical to `flo` but as a
 #'   [`network`][network::network] object with 16 nodes and 20 edges.
 #'
-#' @details Breiger \& Pattison (1986), in their discussion of local role
+#' @details Breiger & Pattison (1986), in their discussion of local role
 #'   analysis, use a subset of data on the social relations among Renaissance
 #'   Florentine families (person aggregates) collected by John Padgett from
 #'   historical documents. The two relations are business ties
@@ -59,16 +59,16 @@
 #'   credits and joint partnerships) and marriage alliances
 #'   (\code{flomarriage}).
 #'
-#' As Breiger \& Pattison point out, the original data are symmetrically coded.
+#' As Breiger & Pattison point out, the original data are symmetrically coded.
 #' This is acceptable perhaps for marital ties, but is unfortunate for the
 #' financial ties (which are almost certainly directed). To remedy this, the
 #' financial ties can be recoded as directed relations using some external
 #' measure of power - for instance, a measure of wealth. Both graphs provide
-#' vertex information on (1) \code{wealth} each family's net wealth in 1427 (in
-#' thousands of lira); (2) \code{priorates} the number of priorates (seats on
-#' the civic council) held between 1282- 1344; and (3) \code{totalties} the
-#' total number of business or marriage ties in the total dataset of 116
-#' families (see Breiger \& Pattison (1986), p 239).
+#' vertex information on (1) `wealth` each family's net wealth in 1427 (in
+#' thousands of lira); (2) `priorates` the number of priorates (seats on the
+#' civic council) held between 1282- 1344; and (3) `totalties` the total number
+#' of business or marriage ties in the total dataset of 116 families (see
+#' Breiger & Pattison (1986), p 239).
 #'
 #' Substantively, the data include families who were locked in a struggle for
 #' political control of the city of Florence around 1430. Two factions were
