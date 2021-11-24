@@ -101,6 +101,30 @@ visual_summary <- function(net, net_name=deparse(substitute(net)), ...) {
 
 
 
+# Table of all data -------------------------------------------------------
+
+get_data <- function(name, package="statnet.data") {
+  e <- new.env()
+  on.exit(rm(e))
+  data(name, package=package, envir=e)
+  get(name, envir=e)
+}
+
+table_datasets <- function() {
+  l <- data(package="statnet.data")
+  r <- lapply(l$results[,"Item"], function(n) {
+    net <- get_data(n)
+    data.frame(
+      name = n,
+      directed = ifelse(network::is.directed(net), "Yes", "No")
+    )
+  })
+  knitr::kable(do.call("rbind", r))
+}
+
+
+
+
 # Utils -------------------------------------------------------------------
 
 # Assignment version of append()
