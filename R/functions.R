@@ -101,25 +101,48 @@ visual_summary <- function(net, net_name=deparse(substitute(net)), ...) {
 
 
 
-# Table of all data -------------------------------------------------------
+# Summary of all datasets based on package sources ------------------------
 
-get_data <- function(name, package="statnet.data") {
+# Get a dataset
+# @param name
+# @return A named list of data object
+get_data <- function(fname) {
+  if(!file.exists(fname))
+    stop("file ", sQuote(name), " not found", call.=FALSE)
   e <- new.env()
-  on.exit(rm(e))
-  data(name, package=package, envir=e)
-  get(name, envir=e)
+  load(fname, envir=e)
+  as.list(e)
+}
+
+#' @export
+describe_data_object <- function(object, ...) UseMethod("describe_data_object")
+
+#' @export
+describe_data_object.default <- function(object, ...) {
+  data.frame(
+    class = data.class(object)
+  )
+}
+
+#' @export
+describe_data_object.network <- function(object, ...) {
+  r <- NextMethod()
+  # r <- describe_data_object.default(object, ...)
+  r$directed <- if(network::is.directed(object)) "Yes" else "No"
+  r$bipartite <- if(network::is.bipartite(object)) "Yes" else "No"
+  r$nodes <- network::network.size(object)
+  r$edges <- network::network.edgecount(object)
+  r
 }
 
 table_datasets <- function() {
-  l <- data(package="statnet.data")
-  r <- lapply(l$results[,"Item"], function(n) {
-    net <- get_data(n)
-    data.frame(
-      name = n,
-      directed = ifelse(network::is.directed(net), "Yes", "No")
-    )
-  })
-  knitr::kable(do.call("rbind", r))
+  all_data_files <- list.files("data", pattern="\\.rda")
+  data_names <- gsub("\\.rda$", "", all_data_files)
+  l <- lapply(
+    file.path("data", all_data_files),
+    function(fn) lapply(get_data(fn), describe_data_object)
+  )
+  l
 }
 
 
